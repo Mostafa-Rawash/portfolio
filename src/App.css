@@ -1,38 +1,224 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+h1 {
+  color: var(--font-high-emphasis, #25282b);
+  width: 486px;
+  /* title/h1 */
+  font-family: "Playfair Display";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 76.8px */
+}
+h2 {
+  color: var(--font-high-emphasis, #25282b);
   text-align: center;
+  position: relative;
+  /* title / h2 */
+  font-family: "Playfair Display";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px; /* 150% */
+}
+h2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--brand-yellow, #fdc435);
+}
+h3 {
+  color: var(--font-high-emphasis, #25282b);
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 60px */
+}
+p {
+  color: var(--font-medium-emphasis, #828282);
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p.banner {
+  color: var(--font-medium-emphasis, #828282);
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+}
+p.subheadline {
+  width: 486px;
+  color: var(--font-medium-emphasis, #828282);
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p.brand-yellow {
+  color: var(--brand-yellow, #fdc435);
+  font-family: Nunito;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.projectDesc--title {
+  color: var(--font-high-emphasis, #25282b);
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 60px */
+}
+.projectDesc--subtitle {
+  color: var(--font-medium-emphasis, #828282);
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+/* Theme */
+button.btn {
   display: flex;
-  flex-direction: column;
+  padding: 8px 24px;
+  align-items: flex-start;
+  border-radius: 24px;
+  border: 1px solid var(--font-high-emphasis, #25282b);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+}
+
+
+button.btn-light{
+  border-radius: 8px;
+border: 2px solid var(--bg-line, #25282B);
+}
+button.btn-warning {
+  border-radius: 8px;
+  background: var(--brand-yellow, #FDC435);
+}
+button.btn-info {
+  background: none;
+  border-radius: 24px;
+border: 1px solid var(--font-high-emphasis, #25282B);
+
+}
+
+/*body*/
+.container {
+  margin: auto;
+}
+
+/*Header*/
+
+.navbar {
+  position: absolute;
+  width: 100%;
+}
+.navbar-brand {
+  color: var(--font-high-emphasis, #25282b);
+  font-family: Comfortaa;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 180%; /* 32.4px */
+}
+
+.nav-link {
+  color: var(--font-high-emphasis, #25282b);
+
+  /* body / 18px */
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+}
+
+/* Hero banner */
+/* .hero--section{
+  min-height: 100vh; */
+/* } */
+
+div#hero--text {
+  height: 100%;
+  width: 486px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+div#hero--text h1,
+div#hero--text p.subheadline {
+  margin-bottom: 32px;
+}
+
+/*   Project section*/
+.project--section {
+  margin-top: 80px;
+  border-radius: 24px;
+  box-shadow: 0px 6px 64px 0px rgba(112, 144, 176, 0.1);
+  overflow: hidden;
+}
+.leftCol {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.projectDesc {
+  display: flex;
+  max-width: 406.678px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.project--image {
+  padding: 0;
+}
+.project--image img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+p.footer--desc {
+  margin-top: 32px;
+  color: var(--font-medium-emphasis, #828282);
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.App-link {
-  color: #61dafb;
+.footer--sec {
+  margin: 144px auto 80px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 192px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row.project--section:nth-child(odd) {
+  flex-direction: row-reverse;
 }

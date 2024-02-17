@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.95aea600.css",
-    "main.js": "/portfolio/static/js/main.80a0b5a2.js",
+    "main.css": "/portfolio/static/css/main.bd195b62.css",
+    "main.js": "/portfolio/static/js/main.ad2c60e9.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/project one.png": "/portfolio/static/media/project one.5827e0acbfbbfc24ce36.png",
     "static/media/project two.png": "/portfolio/static/media/project two.bcb6b4a021a76f35fa6b.png",
-    "static/media/image.png": "/portfolio/static/media/image.0426dcb0dc3b96ac5b8b.png",
     "static/media/project three.png": "/portfolio/static/media/project three.c182adfd345578b65351.png",
+    "static/media/main.png": "/portfolio/static/media/main.5fadc36161f558c05eec.png",
+    "static/media/Mostafa-Rawash-SE.pdf": "/portfolio/static/media/Mostafa-Rawash-SE.83bc11de5b816363978f.pdf",
+    "static/media/Minimal Line Wave Pastel Phone Wallpaper Background.png": "/portfolio/static/media/Minimal Line Wave Pastel Phone Wallpaper Background.6842e8c7aed8e1e00a85.png",
     "index.html": "/portfolio/index.html",
-    "main.95aea600.css.map": "/portfolio/static/css/main.95aea600.css.map",
-    "main.80a0b5a2.js.map": "/portfolio/static/js/main.80a0b5a2.js.map",
+    "main.bd195b62.css.map": "/portfolio/static/css/main.bd195b62.css.map",
+    "main.ad2c60e9.js.map": "/portfolio/static/js/main.ad2c60e9.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.95aea600.css",
-    "static/js/main.80a0b5a2.js"
+    "static/css/main.bd195b62.css",
+    "static/js/main.ad2c60e9.js"
   ]
 }

@@ -10,7 +10,9 @@ export default function Header() {
   return (
     <Navbar expand="lg" >
       <Container>
-        <Navbar.Brand href="/">Madelyn Torff</Navbar.Brand>
+        <Navbar.Brand href="/">
+          Mostafa Rawash
+        </Navbar.Brand>
           <Nav>
             <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>

@@ -9,23 +9,24 @@ import image1 from "../assets/project one.png";
 import image2 from "../assets/project two.png";
 import image3 from "../assets/project three.png";
 const projectsData = [
+    {
+      title: "Betrend",
+      subtitle:
+        "Managed the team consisting of 4 team members to release the AI SAAS (software as a service) project ,Developed a AI SAAS web application using Frappe framework that’s created in Oracle server to be accessible from websites and Android devices using:",
+      image: image3,
+      callToAction: "View Project",
+    },
   {
-    title: "Project Name",
+    title: "Faxes Management System",
     subtitle:
-      "I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.",
+      "Created an application that takes new faxes from the fax machine, shares them in a local network, and then sends new faxes to specific users with authorization.",
     image: image1,
-    callToAction: "View Project",
   },
   {
-    title: "Project Name",
-    subtitle:"What was your role, your deliverables, if the project was personal, freelancing." ,   
+    title: "Letcut",
+    subtitle:
+      "Created a landing page for a video production company ,Made the outlines of the website using Elementor (a free subscription WordPress plugin) to achieve the client’s request, Made many changes using pure HTML and JS to reduce the cost, and update the page performance to achieve 98%, Upgraded the SEO of the site to achieve 90% in PageSpeed Insights.",
     image: image2,
-    callToAction: "View Project",
-  },{
-    title: "Project Name",
-    subtitle:"You can also add in this description the type of the project, if it was for web, mobile, electron.",
-     image: image3,
-    callToAction: "View Project",
   },
 ];
 
@@ -35,21 +36,24 @@ export default function Projects() {
       <h2>Projects</h2>
       {projectsData.map(({ title, subtitle, image, callToAction }) => {
         return (
-            <Row className="project--section d-flex">
-              <Col className="leftCol p-2">
-                <div className="projectDesc">
-
+          <Row className="project--section d-flex">
+            <Col className="leftCol p-2">
+              <div className="projectDesc">
                 <h3 className="projectDesc--title">{title}</h3>
                 <p className="projectDesc--subtitle">{subtitle}</p>
-                <Button className="mx-2" variant="info">
-                  {callToAction}
-                </Button>
-                </div>
-              </Col>
-              <Col className="project--image">
-                <img src={image} alt="" />
-              </Col>
-            </Row>
+                {callToAction ? (
+                  <Button className="mx-2" variant="info">
+                    {callToAction}
+                  </Button>
+                ) : (
+                  ""
+                )}
+              </div>
+            </Col>
+            <Col className="project--image">
+              <img src={image} alt="" />
+            </Col>
+          </Row>
         );
       })}
     </Container>

@@ -92,6 +92,10 @@ p.brand-yellow {
   font-weight: 400;
   line-height: 150%; /* 27px */
 }
+a{
+  direction: unset;
+  text-decoration: none;
+  color: inherit;}
 /* Theme */
 button.btn {
   display: flex;
@@ -106,20 +110,18 @@ button.btn {
   line-height: 150%; /* 27px */
 }
 
-
-button.btn-light{
+button.btn-light {
   border-radius: 8px;
-border: 2px solid var(--bg-line, #25282B);
+  border: 2px solid var(--bg-line, #25282b);
 }
 button.btn-warning {
   border-radius: 8px;
-  background: var(--brand-yellow, #FDC435);
+  background: var(--brand-yellow, #fdc435);
 }
 button.btn-info {
   background: none;
   border-radius: 24px;
-border: 1px solid var(--font-high-emphasis, #25282B);
-
+  border: 1px solid var(--font-high-emphasis, #25282b);
 }
 
 /*body*/
@@ -154,14 +156,24 @@ border: 1px solid var(--font-high-emphasis, #25282B);
 }
 
 /* Hero banner */
-/* .hero--section{
-  min-height: 100vh; */
-/* } */
+ .hero--section {
+  background-image: url("./assets/Minimal\ Line\ Wave\ Pastel\ Phone\ Wallpaper\ Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about{
+  position: relative;
+}
+div.wave{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  
+}
 
 div#hero--text {
   height: 100%;
-  width: 486px;
-  margin: auto;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -169,6 +181,7 @@ div#hero--text {
 div#hero--text h1,
 div#hero--text p.subheadline {
   margin-bottom: 32px;
+  width: 100%;
 }
 
 /*   Project section*/

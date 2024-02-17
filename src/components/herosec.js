@@ -5,25 +5,35 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import React from "react";
 
-import bannerImage from "../assets/image.png";
-
+import bannerImage from "../assets/main.png";
+import CV from "../assets/Mostafa-Rawash-SE.pdf"
 export default function HeroSec() {
   return (
     <div className="hero--section d-flex">
-      <Container id="about" fluid>
+      <Container id="about">
         <Row>
-          <Col  md={6}>
+          <Col md={6}>
             <div id="hero--text">
-              <p className="brand-yellow">UI/UX Designer</p>
-              <h1>Hello, my name is Madelyn Torff</h1>
+              <p className="brand-yellow">Software Engineer </p>
+              <h1>Hello, my name is Mostafa Rawash</h1>
               <p className="subheadline">
-                Short text with details about you, what you do or your
-                professional career. You can add more information on the about
-                page.
+                Full stack developer with a passion for creating scalable,
+                secure, and maintainable web applications, Skilled in frameworks
+                technologies such as Frappe and MEVN, front-end technologies
+                such as HTML, CSS, JavaScript, Jinja, and Vue.JS, back-end
+                technologies such as Flask, Node.js, Express and databases
+                including MySQL and MongoDB. Experience with RESTful APIs.{" "}
               </p>
               <Button className="mx-2" variant="warning">
                 {" "}
-                Projects
+                <a
+                  href={CV} // Replace this path with the actual path to your CV file
+                  className="cta-button"
+                  download
+                >
+                  {" "}
+                  Download C.V
+                </a>
               </Button>
               <Button className="mx-2" variant="light">
                 LinkedIn
@@ -31,7 +41,7 @@ export default function HeroSec() {
             </div>
           </Col>
           <Col className=" d-flex justify-content-end">
-            <img src={bannerImage} alt="" className="w-100" />
+            <img src={bannerImage} alt="" className="h-100 m-auto" />
           </Col>
         </Row>
       </Container>

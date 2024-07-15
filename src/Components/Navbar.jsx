@@ -1,8 +1,8 @@
 import React from 'react'
 
 const navigation = [
-    { name: 'Dashboard', href: '#', current: true },
-    { name: 'Tech Skills', href: '#Skills', current: false },
+    { name: 'Dashboard', href: '/', current: true },
+    { name: 'Work', href: '/work', current: false },
     { name: 'Work Experiences', href: '#Work', current: false },
     { name: 'Projects', href: '#Projects', current: false },
 ]
@@ -17,9 +17,9 @@ export default function Navbar() {
                     </div>
                     <ul tabIndex={0} className=" menu menu-horizontal px-1  menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-theme-cc rounded-box w-52">
                         {
-                            navigation.map((val) => {
+                            navigation.map((val ,key) => {
                                 return (
-                                    <li><a className='text-xl font-bold' href={val.href}>{val.name}</a></li>
+                                    <li><a className='text-xl font-bold' href={val.href} key={key}>{val.name}</a></li>
                                 )
                             })
                         }
@@ -29,9 +29,9 @@ export default function Navbar() {
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     {
-                        navigation.map((val) => {
+                        navigation.map((val ,key) => {
                             return (
-                                <li><a className='text-xl font-bold' href={val.href}>{val.name}</a></li>
+                                <li><a className='text-xl font-bold' href={val.href} key={key}>{val.name}</a></li>
                             )
                         })
                     }
@@ -41,7 +41,7 @@ export default function Navbar() {
                 <ul className="menu menu-horizontal ">
                     <li>
                         <a href="https://linkedin.com/in/mostafa-rawash" target="_blank " aria-label="social-linkedin" className="tooltip p-2 tooltip-bottom" data-tip="linkedin">
-                            <span class="[&>svg]:h-5 [&>svg]:w-5">
+                            <span className="[&>svg]:h-5 [&>svg]:w-5">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="currentColor"
@@ -55,7 +55,7 @@ export default function Navbar() {
 
                     <li>
                         <a href="https://github.com/Mostafa-Rawash" target="_blank " aria-label="social-github" className="tooltip p-2 tooltip-bottom" data-tip="github">
-                            <span class="[&>svg]:h-5 [&>svg]:w-5">
+                            <span className="[&>svg]:h-5 [&>svg]:w-5">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="currentColor"
@@ -68,7 +68,7 @@ export default function Navbar() {
                     </li>
                     <li>
                         <a href="https://www.facebook.com/Mostafa.Rawwash" className="tooltip p-2 tooltip-bottom" target="_blank " aria-label="social-Facebook" data-tip="Facebook" >
-                            <span class="[&>svg]:h-5 [&>svg]:w-5">
+                            <span className="[&>svg]:h-5 [&>svg]:w-5">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="currentColor"
@@ -81,7 +81,7 @@ export default function Navbar() {
                     </li>
                     <li>
                         <a href="https://wa.me/201099129550" className="tooltip p-2 tooltip-bottom" target="_blank " aria-label="social-Whats" data-tip="Whats App" >
-                            <span class="[&>svg]:h-5 [&>svg]:w-5">
+                            <span className="[&>svg]:h-5 [&>svg]:w-5">
                                 <svg fill="currentColor" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     viewBox="0 0 308 308" xml:space="preserve">
                                     <g id="XMLID_468_">

@@ -1,6 +1,8 @@
 import Projects from "../Components/Projects.jsx";
 import SkillsSection from "../Components/SkillsSection.jsx";
 import WorkExperience from "../Components/WorkExperience.jsx";
+import VolunteerSection from "../Components/VolunteerSection.jsx";
+
 import Loader from "../Components/Loader.jsx";
 
 import { useState , useEffect } from "react";
@@ -23,6 +25,7 @@ function Home() {
         <>
         <SkillsSection />
         <WorkExperience />
+        <VolunteerSection />
         <Projects />
       </>
       )

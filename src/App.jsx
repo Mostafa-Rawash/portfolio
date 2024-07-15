@@ -1,10 +1,10 @@
 import Navbar from "./Components/Navbar.jsx";
 import HeroSection from "./Components/HeroSection.jsx";
 import Home from "./Pages/Home.jsx"
-import SocialIcon from "./Components/Social Icon.jsx";
+import Skills from "./Pages/Skills.jsx"
+import Experiences from "./Pages/Experiences.jsx"
+
 import Projects from "./Components/Projects.jsx";
-import SkillsSection from "./Components/SkillsSection.jsx";
-import WorkExperience from "./Components/WorkExperience.jsx";
 import Footer from "./Components/Footer.jsx";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useState , useEffect } from "react";
@@ -23,19 +23,11 @@ function App() {  return (
               <SocialIcon />
               <Footer/>
     */}
-            <Route
-              path="/"
-              element={
-                <>
-                  <Home />
-                </>
-              }
-            />
-            <Route path="/skills" element={<SkillsSection />} />
-            <Route path="/work" element={<WorkExperience />} />
+            <Route path="/" element={ <Home />}/>
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/experiances" element={<Experiences />} />
             <Route path="/projects" element={<Projects />} />
           </Routes>
-          <SocialIcon />
           <Footer />
         </Router>
   );

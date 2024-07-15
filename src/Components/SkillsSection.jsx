@@ -40,7 +40,7 @@ export default function SkillsSection() {
                     return (
                       <li key={liKey} className='flex flex-row-reverse items-center justify-between my-2 '>
                         <figure >
-                          <img src={"/assets/Imgs/Skills/"+ tech + ".png"} className='h-7' alt={tech + ".png"} />
+                          <img src={"/src/assets/Imgs/Skills/"+ tech + ".png"} className='h-7' alt={tech + ".png"} />
                         </figure>
                         <h3 className='text-lg font-bold'>
                         {tech}

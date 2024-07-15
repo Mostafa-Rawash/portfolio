@@ -1,7 +1,7 @@
 import React from "react";
 
-import Linkedin from "../assets/Imgs/Social Icon/Linkedin.png";
-import Github from "../assets/Imgs/Social Icon/Github.png";
+import Linkedin from "/src/assets/Imgs/Social Icon/Linkedin.png";
+import Github from "/src/assets/Imgs/Social Icon/Github.png";
 export default function SocialIcon() {
     return (
         <ul className="menu menu-vertical bg-base-300 rounded-box mt-6 fixed z-40 right-0 -translate-x-1/4 mx-auto bottom-5">

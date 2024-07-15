@@ -28,7 +28,7 @@
                 "main": "Created a web scraper that collects images from” Instagram” to train our AI model"
             }
         ],
-        "img": "/assets/Imgs/Projects/Betrend.png",
+        "img": "/src/assets/Imgs/Projects/Betrend.png",
         "gallary": [
             1,
             2,
@@ -70,7 +70,7 @@
                 "main": "Make new .env file just replace what between with your spicific data"
             }
         ],
-        "img": "/assets/Imgs/Projects/softmindset.png",
+        "img": "/src/assets/Imgs/Projects/softmindset.png",
         "gallary": [],
         "badges": [
             "Google Analytics",
@@ -90,7 +90,7 @@
         "gitUrl": "https://github.com/Mostafa-Rawash/portfolio",
         "name": "Portfolio V1.0",
         "des": "",
-        "img": "/assets/Imgs/Projects/oldportBan.png",
+        "img": "/src/assets/Imgs/Projects/oldportBan.png",
         "gallary": [
             "oldport"
         ],
@@ -114,7 +114,7 @@
                 ]
             }
         ],
-        "img": "/assets/Imgs/Projects/facebook.png",
+        "img": "/src/assets/Imgs/Projects/facebook.png",
         "gallary": [],
         "badges": [
             "Python",
@@ -127,7 +127,7 @@
         "gitUrl": "",
         "name": "View door ecommerce",
         "des": "",
-        "img": "/assets/Imgs/Projects/view.png",
+        "img": "/src/assets/Imgs/Projects/view.png",
         "gallary": [],
         "badges": [
             "WordPress",
@@ -170,7 +170,7 @@
                 ]
             }
         ],
-        "img": "/assets/Imgs/Projects/VR.png",
+        "img": "/src/assets/Imgs/Projects/VR.png",
         "gallary": [],
         "badges": [
             "HTML",
@@ -196,7 +196,7 @@
                 ]
             }
         ],
-        "img": "/assets/Imgs/Projects/whatsapp.png",
+        "img": "/src/assets/Imgs/Projects/whatsapp.png",
         "gallary": [],
         "badges": [
             "Node.Js",
@@ -220,7 +220,7 @@
                 ]
             }
         ],
-        "img": "/assets/Imgs/Projects/erp.png",
+        "img": "/src/assets/Imgs/Projects/erp.png",
         "gallary": [],
         "badges": [
             "Git",
@@ -398,7 +398,7 @@
                 ]
             }
         ],
-        "img": "/assets/Imgs/Projects/VtoT.jpg",
+        "img": "/src/assets/Imgs/Projects/VtoT.jpg",
         "gallary": [],
         "badges": [
             "Python",

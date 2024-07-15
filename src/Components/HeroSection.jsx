@@ -2,10 +2,9 @@ import React from "react";
 import Skill from "./SkillBadge";
 const PersonalData = {
   name: "Mostafa M. Rawash",
-  location: "name",
-  Job: "FULL STACK DEVELOPER",
+  Job: "Software Engineer | DevOps engineer",
   summary:
-    "I am actively seeking an opportunity where I can apply and enhance my knowledge, training, and skills within a respected and high-level professional organization. I am drawn to a rewarding and creative atmosphere that enables me to make a meaningful impact on the organization's success.",
+    "I am actively seeking an opportunity where I can apply and enhance my knowledge, training, and skills within a respected and high-level professional organization. I am drawn to a rewarding and creative atmosphere that enables me to make a meaningful impact on the organization’s success, and looking for a better way to shift my career into DevOps.",
   image: "/src/assets/Imgs/MyImg/MyHeadPic.png",
 };
 import personalImage from "/src/assets/Imgs/MyImg/MyHeadPic.png"

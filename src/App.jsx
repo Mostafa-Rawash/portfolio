@@ -1,13 +1,17 @@
+// Component Calling
 import Navbar from "./Components/Navbar.jsx";
 import HeroSection from "./Components/HeroSection.jsx";
+import Projects from "./Components/Projects.jsx";
+import Footer from "./Components/Footer.jsx";
+
+// Pages Calling
 import Home from "./Pages/Home.jsx"
 import Skills from "./Pages/Skills.jsx"
 import Experiences from "./Pages/Experiences.jsx"
+import Resume from "./Pages/Resume.jsx"
 
-import Projects from "./Components/Projects.jsx";
-import Footer from "./Components/Footer.jsx";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { useState , useEffect } from "react";
+
 import "./App.css";
 
 function App() {  return (
@@ -15,18 +19,11 @@ function App() {  return (
           <Navbar />
           <HeroSection />
           <Routes>
-            {/* In home page will display all Components
-            In each page display
-              <Navbar />
-              <HeroSection />
-                  {page content}
-              <SocialIcon />
-              <Footer/>
-    */}
             <Route path="/" element={ <Home />}/>
             <Route path="/skills" element={<Skills />} />
-            <Route path="/experiances" element={<Experiences />} />
+            <Route path="/experiences" element={<Experiences />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/resume" element={<Resume />} />
           </Routes>
           <Footer />
         </Router>

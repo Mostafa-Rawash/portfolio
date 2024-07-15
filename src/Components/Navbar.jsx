@@ -3,8 +3,9 @@ import React from 'react'
 const navigation = [
     { name: 'Dashboard', href: '/', current: true },
     { name: 'Skills', href: '/skills', current: false },
-    { name: 'Work Experiences', href: '/experiances', current: false },
+    { name: 'Work Experiences', href: '/experiences', current: false },
     { name: 'Projects', href: '/Projects', current: false },
+    { name: 'Resume', href: '/resume', current: false },
 ]
 
 export default function Navbar() {

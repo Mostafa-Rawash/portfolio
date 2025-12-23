@@ -8,12 +8,12 @@ export default function Footer() {
   <div className="max-w-screen-xl mx-auto">
     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
       <div className="space-y-3">
-        <h3 className="text-3xl font-black text-theme-tc">Let&apos;s build resilient, high-velocity products.</h3>
-        <p className="text-theme-lc max-w-xl">I help teams align product strategy, engineering delivery, and operational reliability.</p>
+        <h3 className="text-3xl font-black text-theme-tc">Ready to align product, engineering, and delivery?</h3>
+        <p className="text-theme-lc max-w-xl">Let's plan the next release with clear architecture, metrics, and ownership.</p>
       </div>
       <div className="flex flex-wrap gap-3">
-        <a href="mailto:mostafa@rawash.com" className="btn rounded-full bg-gradient-to-r from-theme-p to-theme-a text-theme-b border-0 font-semibold">Email me</a>
-        <a href="https://wa.me/201099129550" className="btn rounded-full border border-white/10 bg-transparent text-theme-tc font-semibold">Book a call</a>
+        <a href="mailto:mostafa@rawash.com" className="btn rounded-full bg-theme-p text-theme-b border-0 font-semibold">Send a brief</a>
+        <a href="https://wa.me/201099129550" className="btn rounded-full border border-white/10 bg-transparent text-theme-tc font-semibold">Schedule a call</a>
       </div>
     </div>
 
@@ -46,4 +46,8 @@ export default function Footer() {
 </footer>
     )
   } 
+
+
+
+
 

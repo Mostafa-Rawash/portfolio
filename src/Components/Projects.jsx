@@ -19,9 +19,9 @@ export default function Projects({ profileData, projects }) {
               <span className="eyebrow-dot" />
               Projects
             </div>
-            <h2 className='text-3xl lg:text-5xl font-black text-theme-tc leading-tight'>Launches, experiments, and real-world impact.</h2>
+            <h2 className='text-3xl lg:text-5xl font-black text-theme-tc leading-tight'>Launches with measurable outcomes.</h2>
             <p className="text-theme-lc max-w-2xl text-lg">
-              A mix of SaaS, automation, and product builds. Hover to explore the stack, click to dive deeper.
+              Each project highlights a tangible result, the stack, and the delivery story.
             </p>
           </div>
           <div className="surface-card px-6 py-5">

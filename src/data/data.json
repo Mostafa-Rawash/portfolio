@@ -29,8 +29,29 @@
       }
     ],
     "img": "/src/assets/Imgs/Projects/Betrend.png",
-    "gallary": [1, 2, 3, 4, 5, 6],
-    "badges": ["Git", "Docker", "Frappe", "Node.Js", "Python", "Vue.JS", "SCSS", "Jinja", "Flask", "HTML", "CSS", "MySQL"]
+    "gallary": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "badges": [
+      "Git",
+      "Docker",
+      "Frappe",
+      "Node.Js",
+      "Python",
+      "Vue.JS",
+      "SCSS",
+      "Jinja",
+      "Flask",
+      "HTML",
+      "CSS",
+      "MySQL"
+    ],
+    "impact": "Impact: launched AI SaaS with 4-person team and multi-platform delivery."
   },
   {
     "gitUrl": "https://github.com/Mostafa-Rawash/Softmindset-Landing-Page-using-React",
@@ -52,15 +73,35 @@
     ],
     "img": "/src/assets/Imgs/Projects/softmindset.png",
     "gallary": [],
-    "badges": ["Google Analytics", "Google Cloud Run", "Google Cloud", "JS", "Node.Js", "MySQL", "HTML", "CSS", "SCSS", "MongoDB", "Express.js"]
+    "badges": [
+      "Google Analytics",
+      "Google Cloud Run",
+      "Google Cloud",
+      "JS",
+      "Node.Js",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "SCSS",
+      "MongoDB",
+      "Express.js"
+    ],
+    "impact": "Impact: shipped analytics-ready landing with cloud deployment."
   },
   {
     "gitUrl": "https://github.com/Mostafa-Rawash/portfolio",
     "name": "Portfolio V1.0",
     "des": [],
     "img": "/src/assets/Imgs/Projects/oldportBan.png",
-    "gallary": ["oldport"],
-    "badges": ["React.JS", "CSS", "Tailwind"]
+    "gallary": [
+      "oldport"
+    ],
+    "badges": [
+      "React.JS",
+      "CSS",
+      "Tailwind"
+    ],
+    "impact": "Impact: delivered first personal portfolio with React/Tailwind."
   },
   {
     "gitUrl": "https://github.com/Mostafa-Rawash/facebook_markiting_api",
@@ -78,7 +119,13 @@
     ],
     "img": "/src/assets/Imgs/Projects/facebook.png",
     "gallary": [],
-    "badges": ["Python", "colab", "MongoDB", "meta"]
+    "badges": [
+      "Python",
+      "colab",
+      "MongoDB",
+      "meta"
+    ],
+    "impact": "Impact: captured 82,867 interests dataset via Facebook API."
   },
   {
     "gitUrl": "",
@@ -86,7 +133,14 @@
     "des": [],
     "img": "/src/assets/Imgs/Projects/view.png",
     "gallary": [],
-    "badges": ["WordPress", "elementor", "HTML", "CSS", "MySQL"]
+    "badges": [
+      "WordPress",
+      "elementor",
+      "HTML",
+      "CSS",
+      "MySQL"
+    ],
+    "impact": "Impact: improved e-commerce readiness for product sales."
   },
   {
     "gitUrl": "https://github.com/Mostafa-Rawash/firstVR",
@@ -123,7 +177,13 @@
     ],
     "img": "/src/assets/Imgs/Projects/VR.png",
     "gallary": [],
-    "badges": ["HTML", "aframe", "SCSS", "MySQL"]
+    "badges": [
+      "HTML",
+      "aframe",
+      "SCSS",
+      "MySQL"
+    ],
+    "impact": "Impact: built 3DoF VR experience with real-time background."
   },
   {
     "gitUrl": "",
@@ -144,7 +204,11 @@
     ],
     "img": "/src/assets/Imgs/Projects/whatsapp.png",
     "gallary": [],
-    "badges": ["Node.Js", "Python"]
+    "badges": [
+      "Node.Js",
+      "Python"
+    ],
+    "impact": "Impact: enabled faster response workflows and broadcast automation."
   },
   {
     "gitUrl": "",
@@ -165,7 +229,21 @@
     ],
     "img": "/src/assets/Imgs/Projects/erp.png",
     "gallary": [],
-    "badges": ["Git", "Docker", "Frappe", "Node.Js", "Python", "Vue.JS", "SCSS", "Jinja", "Flask", "MySQL", "HTML", "CSS"]
+    "badges": [
+      "Git",
+      "Docker",
+      "Frappe",
+      "Node.Js",
+      "Python",
+      "Vue.JS",
+      "SCSS",
+      "Jinja",
+      "Flask",
+      "MySQL",
+      "HTML",
+      "CSS"
+    ],
+    "impact": "Impact: unified operations across accounting, CRM, and inventory."
   },
   {
     "gitUrl": "https://github.com/Mostafa-Rawash/chat-app",
@@ -185,7 +263,12 @@
     ],
     "img": "",
     "gallary": [],
-    "badges": ["HTML", "CSS", "Socket"]
+    "badges": [
+      "HTML",
+      "CSS",
+      "Socket"
+    ],
+    "impact": "Impact: delivered real-time multi-room chat experience."
   },
   {
     "gitUrl": "",
@@ -200,7 +283,14 @@
     ],
     "img": "",
     "gallary": [],
-    "badges": ["WordPress", "PHP", "CSS", "Voyager", "MySQL"]
+    "badges": [
+      "WordPress",
+      "PHP",
+      "CSS",
+      "Voyager",
+      "MySQL"
+    ],
+    "impact": "Impact: stabilized admin workflows and data consistency."
   },
   {
     "gitUrl": "",
@@ -218,7 +308,13 @@
     ],
     "img": "",
     "gallary": [],
-    "badges": ["arduino", "tinkercad", "eagle", "MySQL"]
+    "badges": [
+      "arduino",
+      "tinkercad",
+      "eagle",
+      "MySQL"
+    ],
+    "impact": "Impact: reduced chassis to 80x92 mm for competition readiness."
   },
   {
     "gitUrl": "",
@@ -239,7 +335,12 @@
     ],
     "img": "",
     "gallary": [],
-    "badges": ["HTML", "CSS", "Socket"]
+    "badges": [
+      "HTML",
+      "CSS",
+      "Socket"
+    ],
+    "impact": "Impact: lifted performance to 98% and SEO to 90%."
   },
   {
     "gitUrl": "",
@@ -254,8 +355,22 @@
       }
     ],
     "img": "",
-    "gallary": ["barq/1", "barq/2", "barq/3", "barq/4", "barq/5", "barq/6"],
-    "badges": ["Frappe", "Flask", "HTML", "CSS", "JS"]
+    "gallary": [
+      "barq/1",
+      "barq/2",
+      "barq/3",
+      "barq/4",
+      "barq/5",
+      "barq/6"
+    ],
+    "badges": [
+      "Frappe",
+      "Flask",
+      "HTML",
+      "CSS",
+      "JS"
+    ],
+    "impact": "Impact: secured fax routing with role-based authorization."
   },
   {
     "gitUrl": "",
@@ -270,7 +385,12 @@
     ],
     "img": "",
     "gallary": [],
-    "badges": ["WordPress", "PHP", "Restful API"]
+    "badges": [
+      "WordPress",
+      "PHP",
+      "Restful API"
+    ],
+    "impact": "Impact: automated WooCommerce-to-Daftra order sync."
   },
   {
     "gitUrl": "https://github.com/Mostafa-Rawash/Video-Summarization",
@@ -278,7 +398,10 @@
     "des": [
       {
         "main": "Developed a Flask web app that converts uploaded video/audio to text and generates concise summaries using:",
-        "sub": ["Whisper v3 model.", "BART model."]
+        "sub": [
+          "Whisper v3 model.",
+          "BART model."
+        ]
       },
       {
         "main": "Preprocessed media with moviepy to extract audio before transcription."
@@ -286,6 +409,12 @@
     ],
     "img": "/src/assets/Imgs/Projects/VtoT.jpg",
     "gallary": [],
-    "badges": ["Python", "Jinja", "Flask", "Restful API"]
+    "badges": [
+      "Python",
+      "Jinja",
+      "Flask",
+      "Restful API"
+    ],
+    "impact": "Impact: automated video-to-summary workflow with ML models."
   }
 ]

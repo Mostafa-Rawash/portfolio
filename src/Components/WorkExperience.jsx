@@ -45,7 +45,7 @@ export default function WorkExperience({ profileData, experiences }) {
             {workExperiences.map((work, index) => (
               <article
                 key={`${work.company}-${work.title}-${index}`}
-                className="surface-card card-accent p-5 transition-colors duration-200 hover:border-theme-p/50"
+                className="surface-card card-accent p-5 transition-colors duration-200 hover:border-theme-p/50 h-full flex flex-col"
               >
                 <div className="flex items-start justify-between gap-3">
                   <div>
@@ -70,7 +70,7 @@ export default function WorkExperience({ profileData, experiences }) {
                   </ul>
                 )}
 
-                <div className="flex items-center justify-between text-[11px] text-theme-lc pt-4">
+                <div className="flex items-center justify-between text-[11px] text-theme-lc pt-4 mt-auto">
                   <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 font-semibold">
                     {work.achievements ? work.achievements.length : 1} Highlights
                   </span>

@@ -7,11 +7,17 @@ export default function Project(props) {
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
   return (
-    <div className="group relative overflow-hidden surface-card card-accent my-4 transition-colors duration-200 hover:border-theme-p/50">
+    <div className="group relative overflow-hidden surface-card card-accent my-4 transition-colors duration-200 hover:border-theme-p/50 h-full flex flex-col">
       <div className="flex flex-col h-full">
         {props.project.img && (
           <figure className='relative h-48 overflow-hidden'>
-            <img src={props.project.img} alt={props.project.img} className='h-full w-full object-cover transition-transform duration-500 group-hover:scale-105' loading="lazy"/>
+            <img
+              src={props.project.img}
+              alt={props.project.name}
+              className='h-full w-full object-cover transition-transform duration-500 group-hover:scale-105'
+              loading="lazy"
+              decoding="async"
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
           </figure>
         )}
@@ -25,6 +31,9 @@ export default function Project(props) {
               props.project.name
             )}
           </h2>
+          {props.project.impact && (
+            <p className="text-sm font-semibold text-theme-tc">{props.project.impact}</p>
+          )}
           <p className="text-theme-lc text-sm">{props.project.description || props.project.des?.[0]?.main}</p>
           {props.project.period && (
             <span className="text-xs font-semibold text-theme-tc rounded-full px-3 py-1 w-max border border-white/10 bg-white/5">
@@ -33,6 +42,7 @@ export default function Project(props) {
           )}
           {props.project.badges && (
             <div className="flex flex-wrap gap-2">
+              <span className="text-[11px] uppercase tracking-[0.14em] text-theme-lc w-full">Stack</span>
               {props.project.badges.slice(0, 4).map((badge, key) => (
                 <span
                   key={key}
@@ -48,6 +58,16 @@ export default function Project(props) {
                 </span>
               )}
             </div>
+          )}
+          {props.project.gitUrl && (
+            <a
+              href={props.project.gitUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="text-xs font-semibold text-theme-lc hover:text-theme-p"
+            >
+              View GitHub →
+            </a>
           )}
         </div>
       </div>

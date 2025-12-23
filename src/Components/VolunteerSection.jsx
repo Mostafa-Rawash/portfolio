@@ -11,9 +11,9 @@ export default function VolunteerSection({ profileData }) {
               <span className="eyebrow-dot" />
               Volunteering
             </div>
-            <h2 className="text-3xl lg:text-5xl font-black text-theme-tc leading-tight">Communities & competitions.</h2>
+            <h2 className="text-3xl lg:text-5xl font-black text-theme-tc leading-tight">Community leadership and competitions.</h2>
             <p className="text-lg text-theme-lc max-w-2xl">
-              Giving back through mentorship, competitions, and community projects.
+              Mentorship, community programs, and impact-driven initiatives that build stronger teams.
             </p>
           </div>
         </div>

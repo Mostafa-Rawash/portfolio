@@ -6,6 +6,17 @@ export default function SkillsSection({ profileData }) {
     stackName,
     stackTech,
   }));
+  const primaryStacks = [
+    ...(skillsFromProfile.frameworksStacks || []),
+    ...(skillsFromProfile.devOps || []),
+  ].slice(0, 6);
+  const secondaryStacks = [
+    ...(skillsFromProfile.frontEnd || []),
+    ...(skillsFromProfile.backEnd || []),
+    ...(skillsFromProfile.databases || []),
+    ...(skillsFromProfile.design || []),
+    ...(skillsFromProfile.programmingLanguages || []),
+  ].slice(0, 10);
   return (
 
     <section id='Skills' className="container mx-auto pt-24">
@@ -18,16 +29,30 @@ export default function SkillsSection({ profileData }) {
             </div>
             <h2 className='text-3xl lg:text-5xl font-black text-theme-tc leading-tight'>Tech toolkit for building, scaling, and shipping.</h2>
             <p className="text-lg text-theme-lc max-w-2xl">
-              A blend of product-minded engineering and DevOps craft to keep delivery fast and reliable.
+              Primary stacks up front, supporting tools grouped for quick scanning.
             </p>
           </div>
           <div className="surface-card px-6 py-5">
-            <p className="text-sm text-theme-lc">Primary stacks</p>
-            <div className="flex flex-wrap gap-3 mt-3">
-              <span className="px-4 py-2 rounded-full muted-chip text-xs font-semibold">MERN</span>
-              <span className="px-4 py-2 rounded-full muted-chip text-xs font-semibold">DevOps</span>
-              <span className="px-4 py-2 rounded-full muted-chip text-xs font-semibold">Product</span>
+            <p className="text-sm text-theme-lc">Primary focus</p>
+            <div className="flex flex-wrap gap-2 mt-3">
+              {primaryStacks.map((item) => (
+                <span key={item} className="px-3 py-1 rounded-full muted-chip text-xs font-semibold">
+                  {item}
+                </span>
+              ))}
             </div>
+            {secondaryStacks.length > 0 && (
+              <>
+                <p className="text-xs text-theme-lc mt-4">Secondary</p>
+                <div className="flex flex-wrap gap-2 mt-2">
+                  {secondaryStacks.map((item) => (
+                    <span key={item} className="px-3 py-1 rounded-full border border-white/10 bg-white/5 text-[11px] font-semibold text-theme-tc">
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </>
+            )}
           </div>
         </div>
 

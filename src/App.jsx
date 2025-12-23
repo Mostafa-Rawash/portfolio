@@ -7,18 +7,14 @@ import Home from "./Pages/Home.jsx";
 import Blogs from "./Pages/Blogs.jsx";
 import BlogDetail from "./Pages/BlogDetail.jsx";
 import Admin from "./Pages/Admin.jsx";
-import fallbackProfileData from "../profile_data.json";
-import fallbackProjects from "./data/data.json";
 import { fetchExperience, fetchProfile, fetchProjects } from "./services/api.js";
 
 import "./App.css";
 
 function App() {
-  const [profileData, setProfileData] = useState(fallbackProfileData);
-  const [projectsData, setProjectsData] = useState(fallbackProjects);
-  const [experienceData, setExperienceData] = useState(
-    fallbackProfileData?.portfolioSite?.workExperiences || []
-  );
+  const [profileData, setProfileData] = useState(null);
+  const [projectsData, setProjectsData] = useState([]);
+  const [experienceData, setExperienceData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {

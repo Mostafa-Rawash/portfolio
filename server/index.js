@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import cron from "node-cron";
 import { MongoClient, ObjectId } from "mongodb";
 
-dotenv.config();
+dotenv.config({ path: "server/.env" });
 
 const app = express();
 const port = process.env.PORT ? Number(process.env.PORT) : 5174;
@@ -12,14 +12,14 @@ const port = process.env.PORT ? Number(process.env.PORT) : 5174;
 app.use(cors());
 app.use(express.json({ limit: "2mb" }));
 
-const mongoUri = process.env.MONGODB_URI;
+const mongoUri = process.env.MONGODB_URI || "mongodb+srv://mostafa_db_user:nO6ULs3xLb3JLEnV@portfolioexperances.vwqhji2.mongodb.net/";
 const dbName = process.env.DB_NAME || "portfolio";
 const profileCollection = process.env.PROFILE_COLLECTION || "profile";
 const projectsCollection = process.env.PROJECTS_COLLECTION || "projects";
 const experienceCollection = process.env.EXPERIENCE_COLLECTION || "experience";
 const blogsCollection = process.env.BLOGS_COLLECTION || "blogs";
 const profileId = process.env.PROFILE_ID || "profile";
-const adminToken = process.env.ADMIN_TOKEN || "";
+const adminToken = process.env.ADMIN_TOKEN || "nO6ULs3xLb3JLEnV";
 
 const linkedInToken = process.env.LINKEDIN_ACCESS_TOKEN || "";
 const linkedInAuthorUrn = process.env.LINKEDIN_AUTHOR_URN || "";
@@ -83,6 +83,7 @@ app.get("/api/profile", async (_req, res) => {
     }
     res.json(doc);
   } catch (error) {
+    console.error("Profile load failed:", error.message);
     res.status(500).json({ error: "Failed to load profile data." });
   }
 });

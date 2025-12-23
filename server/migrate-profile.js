@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import { MongoClient } from "mongodb";
 
-dotenv.config();
+dotenv.config({ path: "server/.env" });
 
 const mongoUri = process.env.MONGODB_URI || "mongodb+srv://mostafa_db_user:nO6ULs3xLb3JLEnV@portfolioexperances.vwqhji2.mongodb.net/";
 const dbName = process.env.DB_NAME || "portfolio";
@@ -31,8 +31,13 @@ async function migrate() {
 
   const { projects = [], portfolioSite = {}, ...profileData } = legacy;
   const experiences = portfolioSite.workExperiences || [];
+  const { workExperiences, ...portfolioSiteData } = portfolioSite;
 
-  const profilePayload = { ...profileData, _id: profileId };
+  const profilePayload = {
+    ...profileData,
+    portfolioSite: portfolioSiteData,
+    _id: profileId,
+  };
 
   await db.collection(profileCollection).replaceOne({ _id: profileId }, profilePayload, { upsert: true });
 

@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "start:server": "node server/index.js",
     "migrate:profile": "node server/migrate-profile.js",
-    "migrate:projects": "node server/migrate-projects.js"
+    "migrate:projects": "node server/migrate-projects.js",
+    "migrate:profile-data": "node server/migrate-profile-data.js"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.18",

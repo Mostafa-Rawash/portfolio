@@ -1,0 +1,262 @@
+{
+  "profile": {
+    "identity": {
+      "fullName": "Mostafa M. Rawash",
+      "headline": "Technical Lead | Product Manager | DevOps Engineer",
+      "location": "Al Jizah, Egypt",
+      "followers": 1191,
+      "connections": "500+",
+      "birthday": "June 10"
+    },
+    "contact": {
+      "email": "mostafa@rawash.com",
+      "phone": "+201099129550",
+      "website": "https://mostafa.rawash.com",
+      "linkedin": "https://linkedin.com/in/mostafa-rawash",
+      "github": "https://github.com/mostafa-rawash"
+    },
+    "summary": {
+      "short": "Product-focused technical leader with strong DevOps and full-stack engineering background.",
+      "long": "Strategic technical leader with 5+ years of experience bridging engineering, DevOps, and product strategy to build scalable SaaS platforms. Proven track record in leading cross-functional teams, defining product roadmaps, architecting cloud infrastructure, and delivering measurable business impact including 40% performance improvements and 25% cost optimization. Strong hands-on expertise in Python, Docker, Kubernetes, and modern web technologies."
+    }
+  },
+
+  "experience": [
+    {
+      "company": "eDariba",
+      "employmentType": "Full-time / Part-time",
+      "roles": [
+        {
+          "title": "Technical Co-Founder & Lead Engineer",
+          "type": "Full-time",
+          "startDate": "Jan 2024",
+          "endDate": "Present",
+          "achievements": [
+            "Architected full technical strategy for a compliance-focused SaaS platform",
+            "Built and led an engineering team of 3–4 developers",
+            "Designed CI/CD pipelines with Docker and Kubernetes reducing deployment time by 50%",
+            "Improved system reliability to 99.5% uptime and reduced costs by 25%"
+          ]
+        },
+        {
+          "title": "Co-founder & Technical Product Manager",
+          "type": "Full-time",
+          "startDate": "Jan 2024",
+          "endDate": "Nov 2024",
+          "achievements": [
+            "Owned product roadmap and feature prioritization",
+            "Coordinated cross-team delivery between engineering, business, and stakeholders"
+          ]
+        },
+        {
+          "title": "Software Engineer",
+          "type": "Part-time",
+          "startDate": "Jan 2024",
+          "endDate": "Dec 2024",
+          "achievements": [
+            "Developed backend systems using Python and Frappe",
+            "Customized WordPress solutions and automated infrastructure using Docker, Kubernetes, Jenkins"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Qayedny",
+      "roles": [
+        {
+          "title": "Technical Lead & Product Manager",
+          "startDate": "Dec 2024",
+          "endDate": "Sep 2025",
+          "achievements": [
+            "Defined and executed product roadmap aligned with business objectives",
+            "Implemented analytics, A/B testing, and feedback loops",
+            "Reduced operational overhead by 25% via DevOps automation"
+          ]
+        },
+        {
+          "title": "Software Engineer II & Project Coordinator",
+          "startDate": "Jul 2024",
+          "endDate": "Aug 2024",
+          "achievements": [
+            "Delivered 20+ page website with 100% on-time delivery",
+            "Improved engagement by 20% and reduced load times by 15%",
+            "Trained 4+ team members on Jira and agile workflows"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "TechVillage for Marketing Solutions",
+      "roles": [
+        {
+          "title": "Senior WordPress Developer / Software Engineer",
+          "startDate": "May 2024",
+          "endDate": "Jun 2024",
+          "achievements": [
+            "Developed 2 custom plugins improving performance by 25%",
+            "Reduced load times by 40% for Digital Leadership platform",
+            "Improved organic traffic by 15%"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Ensoulify",
+      "roles": [
+        {
+          "title": "Software Engineer & Technical Lead",
+          "type": "Part-time",
+          "startDate": "Mar 2021",
+          "endDate": "Oct 2022",
+          "achievements": [
+            "Improved load time by 20% and engagement by 15%",
+            "Automated 80% of server infrastructure using Docker",
+            "Implemented GTM tracking for 90% of user interactions"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Brand Maker Agency",
+      "roles": [
+        {
+          "title": "Front-end Developer & Project Coordinator",
+          "type": "Part-time",
+          "startDate": "Jan 2020",
+          "endDate": "May 2021",
+          "achievements": [
+            "Delivered 3+ WordPress projects end-to-end",
+            "Improved site speed by 40% and traffic by 25%",
+            "Built secure e-commerce solutions reducing downtime by 50%"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Gap Year",
+      "roles": [
+        {
+          "title": "Mandatory Military Service & Part-time Work",
+          "startDate": "Dec 2022",
+          "endDate": "Dec 2023"
+        }
+      ]
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "Digital Egypt Pioneers Initiative (DEPI)",
+      "type": "Professional Certification",
+      "field": "DevOps Engineer",
+      "period": "Jun 2024 – Aug 2024",
+      "highlights": [
+        "CI/CD pipelines",
+        "Cloud & automation workshops",
+        "Top Achiever among 220,470 participants"
+      ]
+    },
+    {
+      "institution": "Modern Academy Maadi",
+      "degree": "Bachelor of Computer Science",
+      "period": "2018 – 2022",
+      "grade": "Very Good (B+)",
+      "graduationProject": "Excellent (A+)"
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "DEPI Final Project – DevOps Technical Lead",
+      "period": "Aug 2024 – Oct 2024",
+      "stack": ["Django", "Docker", "Jenkins", "Kubernetes"],
+      "impact": ["40% build efficiency improvement", "3× scalability"]
+    },
+    {
+      "name": "BeTrend – AI-Powered SaaS Platform",
+      "period": "Jan 2022 – Feb 2022",
+      "stack": ["Frappe", "Docker", "Vue.js", "Flask", "Redis", "MariaDB"],
+      "impact": ["40% system efficiency improvement", "99.9% uptime"]
+    },
+    {
+      "name": "Video Summarization Application",
+      "stack": ["Python", "Flask", "ML", "Docker"]
+    },
+    {
+      "name": "Faxes Management System",
+      "stack": ["Flask", "SQLAlchemy", "Docker"]
+    },
+    {
+      "name": "Facebook Marketing API",
+      "impact": ["82,867 interests collected"],
+      "stack": ["Python", "Facebook API", "MongoDB"]
+    },
+    {
+      "name": "Solar System VR",
+      "stack": ["HTML", "JavaScript"]
+    },
+    {
+      "name": "Micromouse RC",
+      "stack": ["C++", "Arduino", "PCB Design"]
+    }
+  ],
+
+  "skills": {
+    "technical": {
+      "languages": ["Python", "JavaScript", "Node.js", "PHP", "C++"],
+      "frontend": ["React", "HTML", "CSS", "SCSS", "Tailwind", "Vue.js"],
+      "backend": ["Flask", "Frappe", "Express.js", "WordPress"],
+      "databases": ["MongoDB", "MySQL", "MariaDB", "PostgreSQL"],
+      "devops": ["Docker", "Kubernetes", "Jenkins", "CI/CD", "Git"],
+      "design": ["Figma", "Adobe XD"]
+    },
+    "product": [
+      "Product Roadmapping",
+      "Market Research",
+      "Stakeholder Alignment",
+      "A/B Testing",
+      "Agile & Scrum"
+    ],
+    "business": [
+      "Startup Operations",
+      "Cost Optimization",
+      "Technology Strategy",
+      "Team Leadership"
+    ]
+  },
+
+  "volunteering": [
+    {
+      "organization": "GDSC Modern Academy",
+      "role": "Web Committee Member",
+      "period": "2019 – 2020"
+    },
+    {
+      "organization": "Enactus Modern Academy",
+      "role": "PM Coordinator",
+      "period": "2018 – 2019"
+    }
+  ],
+
+  "honorsAndAwards": [
+    {
+      "title": "Top Ten – Enactus National Competition",
+      "issuer": "Enactus Egypt"
+    },
+    {
+      "title": "Innovation Certificate",
+      "issuer": "ITIDA",
+      "date": "Feb 2024"
+    },
+    {
+      "title": "Micromouse Competition",
+      "issuer": "IEEE HTI",
+      "year": "2019"
+    }
+  ],
+
+  "languages": {
+    "Arabic": "Native",
+    "English": "Professional"
+  }
+}

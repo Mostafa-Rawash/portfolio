@@ -57,7 +57,7 @@ export default function BlogDetail() {
           <Link to="/blogs" className="text-theme-p text-sm">
             ← Back to blogs
           </Link>
-          <h1 className="text-4xl lg:text-6xl font-black text-theme-tc">{blog.title}</h1>
+          <h1 className="text-3xl lg:text-5xl font-black text-theme-tc">{blog.title}</h1>
           <div className="flex flex-wrap gap-3 text-xs text-theme-lc">
             <span className="muted-chip rounded-full px-3 py-1">
               {blog.readingTimeMinutes || 1} min read

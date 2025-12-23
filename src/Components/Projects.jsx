@@ -19,7 +19,7 @@ export default function Projects({ profileData, projects }) {
               <span className="eyebrow-dot" />
               Projects
             </div>
-            <h2 className='text-5xl lg:text-7xl font-black text-theme-tc leading-tight'>Launches, experiments, and real-world impact.</h2>
+            <h2 className='text-3xl lg:text-5xl font-black text-theme-tc leading-tight'>Launches, experiments, and real-world impact.</h2>
             <p className="text-theme-lc max-w-2xl text-lg">
               A mix of SaaS, automation, and product builds. Hover to explore the stack, click to dive deeper.
             </p>
@@ -34,15 +34,10 @@ export default function Projects({ profileData, projects }) {
           </div>
         </div>
 
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6 [column-fill:_balance] pb-6">
-
-          {
-            ProjectsList.map((project, key) => {
-              return (
-                <Project project={project} key={key} />
-              )
-            })
-          }
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 pb-6">
+          {ProjectsList.map((project, key) => (
+            <Project project={project} key={key} />
+          ))}
         </div>
       </div>
     </section>

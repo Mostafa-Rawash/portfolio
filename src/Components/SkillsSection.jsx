@@ -16,7 +16,7 @@ export default function SkillsSection({ profileData }) {
               <span className="eyebrow-dot" />
               Skills
             </div>
-            <h2 className='text-5xl lg:text-7xl font-black text-theme-tc leading-tight'>Tech toolkit for building, scaling, and shipping.</h2>
+            <h2 className='text-3xl lg:text-5xl font-black text-theme-tc leading-tight'>Tech toolkit for building, scaling, and shipping.</h2>
             <p className="text-lg text-theme-lc max-w-2xl">
               A blend of product-minded engineering and DevOps craft to keep delivery fast and reliable.
             </p>
@@ -35,19 +35,17 @@ export default function SkillsSection({ profileData }) {
           {
             skillList.map((skills, key) => {
               return (
-                <div className="relative overflow-hidden surface-card p-6 hover:-translate-y-1 transition-transform duration-200" key={key}>
-                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-theme-p via-theme-a to-theme-lc" />
-                  <div className="absolute -right-10 -top-10 h-24 w-24 rounded-full bg-theme-a/10 blur-3xl" />
+                <div className="relative overflow-hidden surface-card card-accent p-5 transition-colors duration-200 hover:border-theme-p/50" key={key}>
                   <div className="relative">
-                    <h2 className="text-2xl font-extrabold pb-4 text-theme-tc">{skills.stackName}</h2>
-                    <ul className="space-y-3">
+                    <h2 className="text-lg font-semibold pb-3 text-theme-tc">{skills.stackName}</h2>
+                    <ul className="space-y-2">
                       {skills.stackTech.map((tech, liKey) => {
                         return (
                           <li key={liKey} className='flex items-center gap-3'>
-                            <div className="h-9 w-9 rounded-2xl bg-base-100/70 border border-white/10 grid place-items-center">
-                              <img src={"/src/assets/Imgs/Skills/"+ tech + ".png"} className='h-6 w-6 object-contain' alt={tech + ".png"} />
+                            <div className="h-8 w-8 rounded-xl bg-base-100/60 border border-white/10 grid place-items-center">
+                              <img src={"/src/assets/Imgs/Skills/"+ tech + ".png"} className='h-5 w-5 object-contain' alt={tech + ".png"} />
                             </div>
-                            <h3 className='text-lg font-semibold text-theme-tc'>
+                            <h3 className='text-base font-semibold text-theme-tc'>
                             {tech}
                             </h3>
                           </li>

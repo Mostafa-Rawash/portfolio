@@ -1,12 +1,14 @@
 const API_BASE = "";
 
 async function request(path, options = {}) {
+  const mergedHeaders = {
+    "Content-Type": "application/json",
+    ...(options.headers || {}),
+  };
+  const { headers: _ignored, ...rest } = options;
   const response = await fetch(`${API_BASE}${path}`, {
-    headers: {
-      "Content-Type": "application/json",
-      ...(options.headers || {}),
-    },
-    ...options,
+    ...rest,
+    headers: mergedHeaders,
   });
 
   if (!response.ok) {

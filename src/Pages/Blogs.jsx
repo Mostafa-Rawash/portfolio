@@ -34,7 +34,7 @@ export default function Blogs() {
             <span className="eyebrow-dot" />
             Blogs
           </div>
-          <h1 className="text-5xl lg:text-7xl font-black text-theme-tc leading-tight">
+          <h1 className="text-3xl lg:text-5xl font-black text-theme-tc leading-tight">
             Writing on product, engineering, and delivery.
           </h1>
           <p className="text-lg text-theme-lc max-w-2xl">
@@ -45,36 +45,39 @@ export default function Blogs() {
         {isLoading ? (
           <p className="text-theme-lc">Loading posts...</p>
         ) : blogs.length ? (
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {blogs.map((blog) => (
-              <article key={blog._id} className="surface-card p-6 space-y-4">
+              <article
+                key={blog._id}
+                className="relative overflow-hidden surface-card card-accent p-5 space-y-3 transition-colors duration-200 hover:border-theme-p/50"
+              >
                 {blog.coverImage && (
                   <img
                     src={blog.coverImage}
                     alt={blog.title}
-                    className="h-48 w-full rounded-2xl object-cover"
+                    className="relative h-44 w-full rounded-xl object-cover"
                     loading="lazy"
                   />
                 )}
-                <div className="space-y-2">
-                  <h2 className="text-2xl font-bold text-theme-tc">
+                <div className="relative space-y-2">
+                  <h2 className="text-base font-semibold text-theme-tc">
                     <Link to={`/blogs/${blog.slug}`} className="hover:text-theme-p">
                       {blog.title}
                     </Link>
                   </h2>
                   <p className="text-theme-lc text-sm">{blog.summary}</p>
                 </div>
-                <div className="flex flex-wrap gap-3 text-xs text-theme-lc">
-                  <span className="muted-chip rounded-full px-3 py-1">
+                <div className="relative flex flex-wrap gap-2 text-xs text-theme-lc">
+                  <span className="rounded-full px-3 py-1 border border-white/10 bg-white/5">
                     {blog.readingTimeMinutes || 1} min read
                   </span>
                   {blog.publishedAt && (
-                    <span className="muted-chip rounded-full px-3 py-1">
+                    <span className="rounded-full px-3 py-1 border border-white/10 bg-white/5">
                       {new Date(blog.publishedAt).toLocaleDateString()}
                     </span>
                   )}
                   {blog.tags?.length ? (
-                    <span className="muted-chip rounded-full px-3 py-1">
+                    <span className="rounded-full px-3 py-1 border border-white/10 bg-white/5">
                       {blog.tags.slice(0, 3).join(", ")}
                     </span>
                   ) : null}

@@ -15,7 +15,7 @@ export default function HeroSection({ profileData }) {
               <span className="eyebrow-dot" />
               Product + Tech leadership
             </div>
-            <h1 className="text-5xl lg:text-7xl font-black leading-tight text-theme-tc">
+            <h1 className="text-3xl lg:text-5xl font-black leading-tight text-theme-tc">
               {heroCopy?.title || "Technical Leadership for high-velocity teams."}
             </h1>
             <p className="text-lg text-theme-lc max-w-3xl">

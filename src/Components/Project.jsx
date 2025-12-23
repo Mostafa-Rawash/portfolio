@@ -7,8 +7,7 @@ export default function Project(props) {
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
   return (
-    <div className="group relative overflow-hidden surface-card my-4 transition-transform hover:-translate-y-1">
-      <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-theme-p via-theme-a to-theme-lc" />
+    <div className="group relative overflow-hidden surface-card card-accent my-4 transition-colors duration-200 hover:border-theme-p/50">
       <div className="flex flex-col h-full">
         {props.project.img && (
           <figure className='relative h-48 overflow-hidden'>
@@ -17,7 +16,7 @@ export default function Project(props) {
           </figure>
         )}
         <div className="card-body w-full gap-3">
-          <h2 className="card-title text-xl text-theme-tc font-bold">
+          <h2 className="card-title text-base text-theme-tc font-semibold">
             {hasDrawer ? (
               <label htmlFor={`${drawerId}-drawer`} className="cursor-pointer hover:text-theme-p transition">
                 {props.project.name}
@@ -28,7 +27,7 @@ export default function Project(props) {
           </h2>
           <p className="text-theme-lc text-sm">{props.project.description || props.project.des?.[0]?.main}</p>
           {props.project.period && (
-            <span className="text-xs font-semibold text-theme-tc muted-chip rounded-full px-3 py-1 w-max">
+            <span className="text-xs font-semibold text-theme-tc rounded-full px-3 py-1 w-max border border-white/10 bg-white/5">
               {props.project.period}
             </span>
           )}
@@ -37,7 +36,7 @@ export default function Project(props) {
               {props.project.badges.slice(0, 4).map((badge, key) => (
                 <span
                   key={key}
-                  className="inline-flex items-center gap-2 rounded-full muted-chip px-3 py-1 text-xs font-semibold text-theme-tc"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] font-semibold text-theme-tc"
                 >
                   <img src={"/src/assets/Imgs/Skills/" + badge + ".png"} className='w-5 h-5 object-contain' alt={badge+".png"} />
                   {badge}

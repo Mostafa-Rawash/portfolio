@@ -11,7 +11,7 @@ export default function VolunteerSection({ profileData }) {
               <span className="eyebrow-dot" />
               Volunteering
             </div>
-            <h2 className="text-5xl lg:text-7xl font-black text-theme-tc leading-tight">Communities & competitions.</h2>
+            <h2 className="text-3xl lg:text-5xl font-black text-theme-tc leading-tight">Communities & competitions.</h2>
             <p className="text-lg text-theme-lc max-w-2xl">
               Giving back through mentorship, competitions, and community projects.
             </p>
@@ -23,9 +23,8 @@ export default function VolunteerSection({ profileData }) {
             return (
               <article
                 key={key}
-                className="relative overflow-hidden surface-card p-6 hover:-translate-y-1 transition-transform duration-200"
+                className="relative overflow-hidden surface-card card-accent p-5 transition-colors duration-200 hover:border-theme-p/50"
               >
-                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-theme-p via-theme-a to-theme-lc" />
                 <div className="flex items-start justify-between gap-4">
                   <div className="space-y-1">
                     <p className="text-sm text-theme-lc">{work.period || `${work.startDate || ""} ${work.endDate ? `- ${work.endDate}` : ""}`}</p>

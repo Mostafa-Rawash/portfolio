@@ -185,7 +185,8 @@ app.post("/api/admin/projects", requireAdmin, async (req, res) => {
 
 app.put("/api/admin/projects/bulk", requireAdmin, async (req, res) => {
   try {
-    const items = Array.isArray(req.body.items) ? req.body.items : [];
+    const raw = req.body;
+    const items = Array.isArray(raw) ? raw : Array.isArray(raw.items) ? raw.items : [];
     const now = new Date().toISOString();
     const payload = items.map((item) => {
       const { _id, ...rest } = item || {};
@@ -271,7 +272,8 @@ app.post("/api/admin/experience", requireAdmin, async (req, res) => {
 
 app.put("/api/admin/experience/bulk", requireAdmin, async (req, res) => {
   try {
-    const items = Array.isArray(req.body.items) ? req.body.items : [];
+    const raw = req.body;
+    const items = Array.isArray(raw) ? raw : Array.isArray(raw.items) ? raw.items : [];
     const now = new Date().toISOString();
     const payload = items.map((item) => {
       const { _id, ...rest } = item || {};
@@ -368,7 +370,8 @@ app.post("/api/admin/blogs", requireAdmin, async (req, res) => {
 
 app.put("/api/admin/blogs/bulk", requireAdmin, async (req, res) => {
   try {
-    const items = Array.isArray(req.body.items) ? req.body.items : [];
+    const raw = req.body;
+    const items = Array.isArray(raw) ? raw : Array.isArray(raw.items) ? raw.items : [];
     const now = new Date().toISOString();
     const payload = items.map((item) => {
       const { _id, ...rest } = item || {};

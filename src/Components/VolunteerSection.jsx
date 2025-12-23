@@ -1,106 +1,51 @@
 import React from "react";
+import profileData from "../../profile_data.json";
 
-let VolunteerList = [
-  {
-    startDate: "2021",
-    endDate: "2023",
-    comName: "ensoulify",
-    title: "Software Engineer",
-    responsibility: (
-      <ul>
-        <li>
-          • Working part of a team and collaborating with business units
-          stakeholders, and technical teams to achieve the project goals.
-        </li>
-        <li>
-          • Using many techs. to customizing, enhancing, and integrating ERPNEXT
-          application.
-        </li>
-      </ul>
-    ),
-    workedWith: [
-      "Frappe",
-      "Python",
-      "JS",
-      "Jinja",
-      "SCSS",
-      "Tailwind",
-      "Flask",
-      "MongoDB",
-      "Docker",
-      "GIT",
-    ],
-  },
-  {
-    startDate: "2020",
-    endDate: "2021",
-    title: "Full stack developer",
-    responsibility: (
-      <ul>
-        <li>
-          • Create WordPress Themes and Plugins using MySQL and pure PHP code.
-        </li>
-        <li>• Assess and troubleshoot site performance and SEO.</li>
-      </ul>
-    ),
-    comName: "BMA – Brand Maker Agency",
-    workedWith: ["wordpress", "Elementor", "PHP", "HTML", "CSS", "SCSS"],
-  },
-];
+const VolunteerList = profileData?.volunteering || [];
+
 export default function VolunteerSection() {
   return (
-    <div id="Work" className="container mx-auto ">
-      <h2 className="text-5xl lg:text-7xl pt-36 w-fit ">Volunteer Experiences</h2>
+    <section id="Volunteering" className="container mx-auto pt-20 pb-10">
+      <div className="section-shell space-y-10">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+          <div className="space-y-3">
+            <div className="eyebrow">
+              <span className="eyebrow-dot" />
+              Volunteering
+            </div>
+            <h2 className="text-5xl lg:text-7xl font-black text-theme-tc leading-tight">Communities & competitions.</h2>
+            <p className="text-lg text-theme-lc max-w-2xl">
+              Giving back through mentorship, competitions, and community projects.
+            </p>
+          </div>
+        </div>
 
-      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-        {VolunteerList.map((work, key) => {
-          return (
-            <li key={key} className=" p-4 ">
-              <div className="timeline-middle ">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="h-5 w-5"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div
-                className={
-                  (key % 2
-                    ? "timeline-start md:text-end mb-10 "
-                    : "timeline-end mb-10") +
-                  " p-6 rounded-3xl bg-base-100 shadow-xl bg-theme-cc"
-                }
+        <div className="grid md:grid-cols-2 gap-6">
+          {VolunteerList.map((work, key) => {
+            return (
+              <article
+                key={key}
+                className="relative overflow-hidden surface-card p-6 hover:-translate-y-1 transition-transform duration-200"
               >
-                <div className="font-mono italic">
-                  {work.startDate + " - " + work.endDate}
+                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-theme-p via-theme-a to-theme-lc" />
+                <div className="flex items-start justify-between gap-4">
+                  <div className="space-y-1">
+                    <p className="text-sm text-theme-lc">{work.period || `${work.startDate || ""} ${work.endDate ? `- ${work.endDate}` : ""}`}</p>
+                    <h3 className="text-2xl font-bold text-theme-tc">{work.organization}</h3>
+                    <p className="text-theme-lc text-sm">{work.position}</p>
+                  </div>
+                  <span className="px-3 py-2 rounded-full text-xs font-semibold muted-chip">
+                    Impact
+                  </span>
                 </div>
-                <h2 className="text-2xl font-black text-left ">
-                  {work.comName + " - " + work.title}
-                </h2>
-                {work.responsibility}
-                {work.workedWith &&
-                  work.workedWith.map((skill, key) => {
-                    return (
-                      <img
-                        src={"/src/assets/Imgs/Skills/" + skill + ".png"}
-                        alt={skill + ".png"}
-                        className="h-7 inline m-3"
-                      />
-                    );
-                  })}
-              </div>
-              <hr />
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+                {work.description && (
+                  <p className="mt-4 text-theme-tc leading-relaxed">{work.description}</p>
+                )}
+              </article>
+            );
+          })}
+        </div>
+      </div>
+    </section>
   );
 }

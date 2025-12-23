@@ -1,410 +1,204 @@
 [
-    {
-        "gitUrl": "https://github.com/Mostafa-Rawash/betrend_app",
-        "name": "Betrend - SaaS web application",
-        "des": [
-            {
-                "main": "Managed the team consisting of 4 team members to release the AI SAAS (software as a service) project."
-            },
-            {
-                "main": "Developed a full-stack web application using Frappe framework that’s created in Oracle server to be accessible from websites and Android devices using: ",
-                "sub": [
-                    "Project Design: Adobe XD.",
-                    "Team management: Jira.",
-                    "Version control: GitHub.",
-                    "Front-end using (HTML/CSS/JavaScript - Vue.js– Jinja) ",
-                    "Back-end (Redis – MariaDB/MySQL – REST API - Flask)",
-                    "Oracle Server handling: Docker – Web hosting control panel Hestia).",
-                    "AI Model: CLIP (Contrastive Language–Image Pre-training)"
-                ]
-            },
-            {
-                "main": "Project Idea: search for an image from a huge dataset using Text meaning then predict the image's popularity to know which image will get high interaction."
-            },
-            {
-                "main": "Integrated with Google and Facebook to get user’s data and share posts to their social media profiles."
-            },
-            {
-                "main": "Created a web scraper that collects images from” Instagram” to train our AI model"
-            }
-        ],
-        "img": "/src/assets/Imgs/Projects/Betrend.png",
-        "gallary": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6
-        ],
-        "badges": [
-            "Git",
-            "Docker",
-            "Frappe",
-            "Node.Js",
-            "Python",
-            "Vue.JS",
-            "SCSS",
-            "Jinja",
-            "Flask",
-            "HTML",
-            "CSS",
-            "MySQL"
-        ]
-    },
-    {
-        "gitUrl": "https://github.com/Mostafa-Rawash/Softmindset-Landing-Page-using-React",
-        "name": "Softmindset - Landing page",
-        "des": [
-            {
-                "main": "the primary technologies used in the project:",
-                "sub": [
-                    "React: Frontend framework for building user interfaces",
-                    "Express: Backend framework for handling server-side logic and API routes.",
-                    " React Router DOM: Enables navigation within the React application.",
-                    "Google Cloud Run: Serverless platform for deploying your application.",
-                    "Google Analytics: Tool for collecting website usage data and analyzing user behavior."
-                ]
-            },
-            {
-                "main": "Make new .env file just replace what between with your spicific data"
-            }
-        ],
-        "img": "/src/assets/Imgs/Projects/softmindset.png",
-        "gallary": [],
-        "badges": [
-            "Google Analytics",
-            "Google Cloud Run",
-            "Google Cloud",
-            "JS",
-            "Node.Js",
-            "MySQL",
-            "HTML",
-            "CSS",
-            "SCSS",
-            "MongoDB",
-            "Express.js"
-        ]
-    },
-    {
-        "gitUrl": "https://github.com/Mostafa-Rawash/portfolio",
-        "name": "Portfolio V1.0",
-        "des": "",
-        "img": "/src/assets/Imgs/Projects/oldportBan.png",
-        "gallary": [
-            "oldport"
-        ],
-        "badges": [
-            "React.JS",
-            "CSS",
-            "Tailwind"
-        ]
-    },
-    {
-        "gitUrl": "https://github.com/Mostafa-Rawash/facebook_markiting_api",
-        "name": "Facebook API integration",
-        "des": [
-            {
-                "main": "Collect Facebook users' interests that Facebook collected for their clients and the number of audiences that are interested in each interest, num. of interests about 82867 interests, using:",
-                "sub": [
-                    "language: python.",
-                    "Integrated with Facebook API.",
-                    "DB: MongoDB Atlas server.",
-                    "Written with Google Colab."
-                ]
-            }
-        ],
-        "img": "/src/assets/Imgs/Projects/facebook.png",
-        "gallary": [],
-        "badges": [
-            "Python",
-            "colab",
-            "MongoDB",
-            "meta"
-        ]
-    },
-    {
-        "gitUrl": "",
-        "name": "View door ecommerce",
-        "des": "",
-        "img": "/src/assets/Imgs/Projects/view.png",
-        "gallary": [],
-        "badges": [
-            "WordPress",
-            "elementor",
-            "HTML",
-            "CSS",
-            "MySQL"
-        ]
-    },
-    {
-        "gitUrl": "https://github.com/Mostafa-Rawash/firstVR",
-        "name": "VR site - Solar System",
-        "des": [
-            {
-                "main": "Created a VR site with 3DoF that shows the Solar System on a real-time video background captured by the camera using HTML, JS and AFHTML."
-            },
-            {
-                "main": "This Virtual Reality (VR) experience allows you to explore the Solar System within a real-time video background captured by your camera. Using 3 Degrees of Freedom (3DoF) head tracking, you can look around and navigate the virtual planets while keeping your surroundings visible in the background.",
-                "sub": [
-                    "HTML: Provides the structure for the webpage.",
-                    "JavaScript: Enables interactivity and manipulation of the 3D scene.",
-                    "A-Frame HTML (AFrame): A web framework for building VR experiences with HTML components."
-                ]
-            },
-            {
-                "main": "Features:",
-                "sub": [
-                    "Real-time Background: The camera captures your surroundings and displays them as the background of the VR scene, creating a unique blend of virtual and real environments.",
-                    "3DoF Head Tracking: By moving your head, you can control your viewpoint within the Solar System, allowing you to explore different planets and celestial bodies.",
-                    "Solar System Objects: The planets, moons, and other objects of the Solar System are represented in 3D models, providing a realistic and immersive experience.",
-                    "Scalability: The VR scene can be scaled to fit the size of your physical space, ensuring a comfortable viewing experience."
-                ]
-            },
-            {
-                "main": "Benefits:",
-                "sub": [
-                    "Engaging Learning Tool: This VR experience can be a fun and interactive way to learn about the Solar System, its planets, and their relative positions.",
-                    "Immersive Exploration: Users can feel like they are truly traveling through space, fostering a sense of wonder and curiosity about the universe.",
-                    "Blended Reality: The real-time video background adds a layer of familiarity and connection to the virtual world, making the experience more engaging."
-                ]
-            }
-        ],
-        "img": "/src/assets/Imgs/Projects/VR.png",
-        "gallary": [],
-        "badges": [
-            "HTML",
-            "aframe",
-            "SCSS",
-            "MySQL"
-        ]
-    },
-    {
-        "gitUrl": "",
-        "name": "Whatsapp Automation Tool",
-        "des": [
-            {
-                "main": "Streamline your WhatsApp communication:",
-                "sub": [
-                    "Take control of your WhatsApp with our automation tool. Respond to messages instantly, categorize chats, send targeted broadcasts, and collaborate with your team - all from one platform."
-                ]
-            },
-            {
-                "main": "Boost your productivity and customer satisfaction:",
-                "sub": [
-                    "Free yourself from repetitive tasks and focus on what matters. Our WhatsApp automation tool helps you deliver faster responses, improve customer experience, and grow your business."
-                ]
-            }
-        ],
-        "img": "/src/assets/Imgs/Projects/whatsapp.png",
-        "gallary": [],
-        "badges": [
-            "Node.Js",
-            "Python"
-        ]
-    },
-    {
-        "gitUrl": "",
-        "name": "ERP system",
-        "des": [
-            {
-                "main": "ERPNext is a powerful open-source ERP (Enterprise Resource Planning) system designed to simplify and centralize your business operations. It offers a comprehensive suite of tools that cater to various departments and functionalities within your organization.:",
-                "sub": [
-                    "Unified Platform: Manage all your core business processes - accounting, sales, inventory, CRM, manufacturing, projects, and more - in one integrated system. Eliminate data silos and ensure seamless information flow across departments.",
-                    "Real-time Visibility: Gain instant insights into your business performance with real-time dashboards and reports. Track inventory levels, monitor sales pipelines, and make informed decisions based on accurate data.",
-                    "Increased Productivity: Automate routine tasks and workflows, freeing up your team to focus on strategic initiatives. Streamline processes like order fulfillment, invoice generation, and expense management.",
-                    "Enhanced Customer Relationship Management (CRM): Build stronger relationships with your customers by managing leads, opportunities, and service requests effectively. Track interactions, automate communications, and personalize your sales approach.",
-                    "Improved Inventory Management: Gain complete control over your inventory levels. Track stock movements, set reorder points, and optimize purchasing decisions to avoid stockouts and overstocking.",
-                    "Simplified Project Management: Plan, track, and manage projects with ease. Collaborate with team members, assign tasks, monitor progress, and stay within budget and deadlines.",
-                    "Cost-Effective Solution: ERPNext is a free and open-source software, eliminating hefty licensing fees. You can customize it to fit your specific business needs and scale effortlessly as your company grows."
-                ]
-            }
-        ],
-        "img": "/src/assets/Imgs/Projects/erp.png",
-        "gallary": [],
-        "badges": [
-            "Git",
-            "Docker",
-            "Frappe",
-            "Node.Js",
-            "Python",
-            "Vue.JS",
-            "SCSS",
-            "Jinja",
-            "Flask",
-            "MySQL",
-            "HTML",
-            "CSS",
-            "MySQL"
-        ]
-    },
-    {
-        "gitUrl": "https://github.com/Mostafa-Rawash/chat-app",
-        "name": "live Chat Web Application",
-        "des": [
-            {
-                "main": "Designed and implemented a real-time chat web application using Sockit.io and React.js."
-            },
-            {
-                "main": "Setup and run",
-                "sub": [
-                    "Make sure you have port 3000 and 8002 free in your machine.",
-                    "Run npm i in both /backend and /react-app directories. ",
-                    "Open two terminal windows and navigate to both of these directories and run npm start"
-                ]
-            }
-        ],
-        "img": "",
-        "gallary": [],
-        "badges": [
-            "HTML",
-            "CSS",
-            "Socket"
-        ]
-    },
-    {
-        "gitUrl": "",
-        "name": "BZNGate - Freelance",
-        "des": [
-            {
-                "main": "Edit the released PHP site using the Voyager Laravel Admin Package and edit controllers, Models and user permissions."
-            },
-            {
-                "main": "Handling MySQL database"
-            }
-        ],
-        "img": "",
-        "gallary": [],
-        "badges": [
-            "WordPress",
-            "PHP",
-            "CSS",
-            "Voyager",
-            "MySQL"
-        ]
-    },
-    {
-        "gitUrl": "",
-        "name": "Micromouse RC",
-        "des": [
-            {
-                "main": "After an understanding of robotics concepts, sensor fusion, motor control, and autonomous navigation, we successfully minimized the car's Dimensions to 80 mm x 92 mm.",
-                "sub": [
-                    "Take control of your WhatsApp with our automation tool. Respond to messages instantly, categorize chats, send targeted broadcasts, and collaborate with your team - all from one platform."
-                ]
-            },
-            {
-                "main": "After laser cutting on wood (CNC), we worked on changing the body to be a printed circuit board (PCB) using Autodesk Eagle App electronic design automation (EDA) software with the same dimensions to be more stable"
-            }
-        ],
-        "img": "",
-        "gallary": [],
-        "badges": [
-            "arduino",
-            "tinkercad",
-            "eagle",
-            "MySQL"
-        ]
-    },
-    {
-        "gitUrl": "",
-        "name": "Letcut - Freelancing",
-        "des": [
-            {
-                "main": "Created a landing page for a video production company."
-            },
-            {
-                "main": "Made the outlines of the website using Elementor (a free subscription WordPress plugin) to achieve the client’s request."
-            },
-            {
-                "main": "Made many changes using pure HTML and JS to reduce the cost, and update the page performance to achieve 98%."
-            },
-            {
-                "main": "Upgraded the SEO of the site to achieve 90% in PageSpeed Insights."
-            }
-        ],
-        "img": "",
-        "gallary": [],
-        "badges": [
-            "HTML",
-            "CSS",
-            "Socket"
-        ]
-    },
-    {
-        "gitUrl": "",
-        "name": "Faxes Management System - Full Stack Developer",
-        "des": [
-            {
-                "main": "Created an application that takes new faxes from the fax machine, shares them in a local network, and then sends new faxes to specific users with authorization:",
-                "sub": [
-                    "Front-end using (HTML/CSS/JavaScript - Jinja)",
-                    "Back-end (SQLAlchemy - Flask)"
-                ]
-            }
-        ],
-        "img": "",
-        "gallary": [
-            "barq/1",
-            "barq/2",
-            "barq/3",
-            "barq/4",
-            "barq/5",
-            "barq/6"
-        ],
-        "badges": [
-            "Frappe",
-            "Flask",
-            "HTML",
-            "CSS",
-            "JS"
-        ]
-    },
-    {
-        "gitUrl": "",
-        "name": "WP plugin that connect woocommerce with Daftra - Freelance",
-        "des": [
-            {
-                "main": "Created an application that takes new faxes from the fax machine, shares them in a local network, and then sends new faxes to specific users with authorization:",
-                "sub": [
-                    "Front-end using (HTML/CSS/JavaScript - Jinja)",
-                    "Back-end (SQLAlchemy - Flask)"
-                ]
-            }
-        ],
-        "img": "",
-        "gallary": [],
-        "badges": [
-            "WordPress",
-            "PHP",
-            "Restful API"
-        ]
-    },
-    {
-        "gitUrl": "https://github.com/Mostafa-Rawash/Video-Summarization",
-        "name": "Video Summarization - Freelance",
-        "des": [
-            {
-                "main": "New project aims to develop a web application using Flask that enables users to upload video/audio files and obtain the text from them then concise summaries generated by :",
-                "sub": [
-                    "whisper v3 model",
-                    "bart model"
-                ]
-            },
-            {
-                "main": "before this steps will convert video into audio using:",
-                "sub": [
-                    "moviepy python library"
-                ]
-            }
-        ],
-        "img": "/src/assets/Imgs/Projects/VtoT.jpg",
-        "gallary": [],
-        "badges": [
-            "Python",
-            "Jinja",
-            "Flask",
-            "Restful API"
-        ]
-    }
+  {
+    "gitUrl": "",
+    "name": "Qayedny Product & Automation Platform",
+    "des": [
+      {"main": "Defined and executed the product roadmap with market research, competitor analysis, and customer feedback loops."},
+      {"main": "Implemented analytics and A/B testing to drive data-backed decisions that improved engagement and product-market fit."},
+      {"main": "Architected automation and DevOps workflows that reduced operational overhead by ~25% and standardized documentation for scale."}
+    ],
+    "img": "",
+    "gallary": [],
+    "badges": ["Agile", "Docker", "Git", "JS", "Python"]
+  },
+  {
+    "gitUrl": "",
+    "name": "eDariba Marketplace SaaS",
+    "des": [
+      {"main": "Architected cloud-native platform serving 100+ vendors, aligning technology roadmap and infrastructure with revenue goals."},
+      {"main": "Built and mentored a 3-4 developer team with code review standards and agile workflows, cutting deployment time by 50% and improving reliability to 99.5% uptime."},
+      {"main": "Designed Docker-based CI/CD and automated deployments that reduced operational costs by 25% and enabled horizontal scalability."},
+      {"main": "Led vendor selection and payment integration strategy, improving platform performance by 30%."}
+    ],
+    "img": "",
+    "gallary": [],
+    "badges": ["Docker", "Git", "Node.Js", "React.JS", "MySQL"]
+  },
+  {
+    "gitUrl": "https://github.com/Mostafa-Rawash/betrend_app",
+    "name": "Betrend AI SaaS",
+    "des": [
+      {"main": "Led a 4-person team to build an AI SaaS for image search and popularity prediction using CLIP and Flask APIs."},
+      {"main": "Developed a full-stack web app with Frappe, Vue.js/Jinja front end, Redis and MariaDB backend, and Dockerized Oracle VPS deployment."},
+      {"main": "Integrated Google and Facebook for authentication and social sharing, and built an Instagram scraper to feed training data."}
+    ],
+    "img": "/src/assets/Imgs/Projects/Betrend.png",
+    "gallary": [1, 2, 3, 4, 5, 6],
+    "badges": ["Git", "Docker", "Frappe", "Node.Js", "Python", "Vue.JS", "SCSS", "Jinja", "Flask", "HTML", "CSS", "MySQL"]
+  },
+  {
+    "gitUrl": "",
+    "name": "DEPI DevOps Final Project",
+    "des": [
+      {"main": "Led technical team delivering a Dockerized Django application with CI/CD managed through Jenkins."},
+      {"main": "Coordinated API integration, database management, and deployment to achieve 40% build efficiency and 3x traffic scalability."},
+      {"main": "Managed project timeline and resource allocation across development and deployment phases."}
+    ],
+    "img": "",
+    "gallary": [],
+    "badges": ["Docker", "Python", "Git"]
+  },
+  {
+    "gitUrl": "https://github.com/Mostafa-Rawash/facebook_markiting_api",
+    "name": "Facebook API Integration",
+    "des": [
+      {"main": "Collected 82,867 Facebook interests using Python and Facebook API with robust error handling."},
+      {"main": "Automated workflows and stored datasets in MongoDB Atlas for analysis."}
+    ],
+    "img": "/src/assets/Imgs/Projects/facebook.png",
+    "gallary": [],
+    "badges": ["Python", "colab", "MongoDB", "meta"]
+  },
+  {
+    "gitUrl": "https://github.com/Mostafa-Rawash/Video-Summarization",
+    "name": "Video Summarization - Freelance",
+    "des": [
+      {"main": "Flask web app that converts uploaded video/audio to text and generates summaries via Whisper v3 and BART models."},
+      {"main": "Preprocessed media with moviepy to extract audio before transcription and summarization."}
+    ],
+    "img": "/src/assets/Imgs/Projects/VtoT.jpg",
+    "gallary": [],
+    "badges": ["Python", "Jinja", "Flask", "Restful API"]
+  },
+  {
+    "gitUrl": "https://github.com/Mostafa-Rawash/Softmindset-Landing-Page-using-React",
+    "name": "Softmindset - Landing page",
+    "des": [
+      {"main": "React landing page with Express backend, deployed on Google Cloud Run with Google Analytics instrumentation."},
+      {"main": "Implemented routing, env-based configuration, and tracking for user behavior analysis."}
+    ],
+    "img": "/src/assets/Imgs/Projects/softmindset.png",
+    "gallary": [],
+    "badges": ["Google Analytics", "Google Cloud Run", "Google Cloud", "JS", "Node.Js", "MySQL", "HTML", "CSS", "SCSS", "MongoDB", "Express.js"]
+  },
+  {
+    "gitUrl": "https://github.com/Mostafa-Rawash/portfolio",
+    "name": "Portfolio V1.0",
+    "des": [
+      {"main": "First iteration of personal portfolio built with React and Tailwind, showcasing early projects and skills."}
+    ],
+    "img": "/src/assets/Imgs/Projects/oldportBan.png",
+    "gallary": ["oldport"],
+    "badges": ["React.JS", "CSS", "Tailwind"]
+  },
+  {
+    "gitUrl": "",
+    "name": "View door ecommerce",
+    "des": [
+      {"main": "Built and customized a WordPress e-commerce site with Elementor for product showcases and ordering."},
+      {"main": "Configured shipping/payment flows, caching, and on-page SEO to improve conversion readiness."}
+    ],
+    "img": "/src/assets/Imgs/Projects/view.png",
+    "gallary": [],
+    "badges": ["WordPress", "elementor", "HTML", "CSS", "MySQL"]
+  },
+  {
+    "gitUrl": "https://github.com/Mostafa-Rawash/firstVR",
+    "name": "VR site - Solar System",
+    "des": [
+      {"main": "Created a 3DoF VR experience with real-time camera background to explore the solar system using A-Frame and JS."},
+      {"main": "Included interactive navigation and scalable 3D models for planets and moons."}
+    ],
+    "img": "/src/assets/Imgs/Projects/VR.png",
+    "gallary": [],
+    "badges": ["HTML", "aframe", "SCSS", "MySQL"]
+  },
+  {
+    "gitUrl": "",
+    "name": "Whatsapp Automation Tool",
+    "des": [
+      {"main": "Automation platform to categorize chats, send broadcasts, and enable team collaboration for WhatsApp communication."},
+      {"main": "Added scheduling, templated replies, and basic analytics dashboards for response times and broadcast reach."}
+    ],
+    "img": "/src/assets/Imgs/Projects/whatsapp.png",
+    "gallary": [],
+    "badges": ["Node.Js", "Python"]
+  },
+  {
+    "gitUrl": "",
+    "name": "ERP system",
+    "des": [
+      {"main": "ERPNext customization covering accounting, sales, inventory, CRM, manufacturing, and projects with real-time dashboards."},
+      {"main": "Implemented automation, permissions, and reporting to improve process efficiency and scalability."}
+    ],
+    "img": "/src/assets/Imgs/Projects/erp.png",
+    "gallary": [],
+    "badges": ["Git", "Docker", "Frappe", "Node.Js", "Python", "Vue.JS", "SCSS", "Jinja", "Flask", "MySQL", "HTML", "CSS"]
+  },
+  {
+    "gitUrl": "https://github.com/Mostafa-Rawash/chat-app",
+    "name": "live Chat Web Application",
+    "des": [
+      {"main": "Real-time chat application using Socket.io and React with setup scripts for local development."},
+      {"main": "Supports multi-room messaging and server/client runbooks for quick start on ports 3000/8002."}
+    ],
+    "img": "",
+    "gallary": [],
+    "badges": ["HTML", "CSS", "Socket"]
+  },
+  {
+    "gitUrl": "",
+    "name": "BZNGate - Freelance",
+    "des": [
+      {"main": "Edited released Laravel app with Voyager admin, updating controllers, models, permissions, and handling MySQL."},
+      {"main": "Improved admin UX, tightened role-based access, and resolved production data consistency issues."}
+    ],
+    "img": "",
+    "gallary": [],
+    "badges": ["WordPress", "PHP", "CSS", "Voyager", "MySQL"]
+  },
+  {
+    "gitUrl": "",
+    "name": "Micromouse RC",
+    "des": [
+      {"main": "Designed and programmed a micromouse robot, reducing size to 80x92 mm and migrating body to PCB for stability."},
+      {"main": "Built maze-solving logic with sensor fusion, motor control tuning, and PCB-level optimizations for weight and speed."}
+    ],
+    "img": "",
+    "gallary": [],
+    "badges": ["arduino", "tinkercad", "eagle", "MySQL"]
+  },
+  {
+    "gitUrl": "",
+    "name": "Letcut - Freelancing",
+    "des": [
+      {"main": "Landing page for video production company built with Elementor and custom HTML/JS to hit 98% performance."},
+      {"main": "Upgraded SEO to reach 90% PageSpeed Insights and tuned animations for better engagement."}
+    ],
+    "img": "",
+    "gallary": [],
+    "badges": ["HTML", "CSS", "Socket"]
+  },
+  {
+    "gitUrl": "",
+    "name": "Faxes Management System - Full Stack Developer",
+    "des": [
+      {"main": "Application to ingest, share, and authorize fax delivery across local network."},
+      {"main": "Front-end with HTML/CSS/JS/Jinja and backend using SQLAlchemy + Flask; added audit trails and role permissions."}
+    ],
+    "img": "",
+    "gallary": ["barq/1", "barq/2", "barq/3", "barq/4", "barq/5", "barq/6"],
+    "badges": ["Frappe", "Flask", "HTML", "CSS", "JS"]
+  },
+  {
+    "gitUrl": "",
+    "name": "WP plugin that connect woocommerce with Daftra - Freelance",
+    "des": [
+      {"main": "Built WordPress plugin to sync WooCommerce with Daftra via REST APIs, handling auth and data mapping."},
+      {"main": "Implemented order sync, customer records, error logging, and retries for reliability."}
+    ],
+    "img": "",
+    "gallary": [],
+    "badges": ["WordPress", "PHP", "Restful API"]
+  }
 ]

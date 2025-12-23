@@ -1,22 +1,46 @@
 import React from 'react'
 
 import Project from './Project'
-import  ProjectsList from "../data/data.json"
+import profileData from "../../profile_data.json";
+
+const ProjectsList = profileData?.projects || [];
+
 export default function Projects() {
   return (
-    <div id='Projects' className="pt-36 container mx-auto">
-      <h2 className='text-5xl lg:text-7xl m-auto' >Projects</h2>
+    <section id='Projects' className="pt-24 container mx-auto">
+      <div className="section-shell">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 pb-10">
+          <div className="space-y-3">
+            <div className="eyebrow">
+              <span className="eyebrow-dot" />
+              Projects
+            </div>
+            <h2 className='text-5xl lg:text-7xl font-black text-theme-tc leading-tight'>Launches, experiments, and real-world impact.</h2>
+            <p className="text-theme-lc max-w-2xl text-lg">
+              A mix of SaaS, automation, and product builds. Hover to explore the stack, click to dive deeper.
+            </p>
+          </div>
+          <div className="surface-card px-6 py-5">
+            <p className="text-sm text-theme-lc">Shipping style</p>
+            <div className="flex flex-wrap gap-3 mt-3">
+              <span className="px-4 py-2 rounded-full muted-chip text-xs font-semibold">Fast MVPs</span>
+              <span className="px-4 py-2 rounded-full muted-chip text-xs font-semibold">CI/CD</span>
+              <span className="px-4 py-2 rounded-full muted-chip text-xs font-semibold">Data-first</span>
+            </div>
+          </div>
+        </div>
 
-      <div className="columns-1 md:columns-2 lg:columns-3 gap-14 pb-20">
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6 [column-fill:_balance] pb-6">
 
-        {
-          ProjectsList.map((project, key) => {
-            return (
-              <Project project={project} key={key} />
-            )
-          })
-        }
+          {
+            ProjectsList.map((project, key) => {
+              return (
+                <Project project={project} key={key} />
+              )
+            })
+          }
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

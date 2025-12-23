@@ -1,43 +1,433 @@
 /* global use, db */
-// MongoDB Playground
-// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
-// Make sure you are connected to enable completions and to be able to run a playground.
-// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
-// The result of the last command run in a playground is shown on the results panel.
-// By default the first 20 documents will be returned with a cursor.
-// Use 'console.log()' to print to the debug output.
-// For more documentation on playgrounds please refer to
-// https://www.mongodb.com/docs/mongodb-vscode/playgrounds/
+// MongoDB Playground: upsert portfolio profile data
+// This script inserts or replaces a single document by _id to avoid duplicates.
 
-// Select the database to use.
-use('mongodbVSCodePlaygroundDB');
+use('portfolio');
 
-// Insert a few documents into the sales collection.
-db.getCollection('sales').insertMany([
-  { 'item': 'abc', 'price': 10, 'quantity': 2, 'date': new Date('2014-03-01T08:00:00Z') },
-  { 'item': 'jkl', 'price': 20, 'quantity': 1, 'date': new Date('2014-03-01T09:00:00Z') },
-  { 'item': 'xyz', 'price': 5, 'quantity': 10, 'date': new Date('2014-03-15T09:00:00Z') },
-  { 'item': 'xyz', 'price': 5, 'quantity': 20, 'date': new Date('2014-04-04T11:21:39.736Z') },
-  { 'item': 'abc', 'price': 10, 'quantity': 10, 'date': new Date('2014-04-04T21:23:13.331Z') },
-  { 'item': 'def', 'price': 7.5, 'quantity': 5, 'date': new Date('2015-06-04T05:08:13Z') },
-  { 'item': 'def', 'price': 7.5, 'quantity': 10, 'date': new Date('2015-09-10T08:43:00Z') },
-  { 'item': 'abc', 'price': 10, 'quantity': 5, 'date': new Date('2016-02-06T20:20:13Z') },
-]);
+const profileData = {
+  "_id": "profile_data",
+  "profile": {
+    "name": "Mostafa Rawash",
+    "headline": "Technical Product Manager at eDariba",
+    "location": "Al Jizah, Egypt",
+    "followers": 1191,
+    "connections": "500+",
+    "contactInfo": {
+      "website": "mostafa.rawash.com",
+      "phone": "+201099129550",
+      "email": "mostafa@rawash.com",
+      "birthday": "June 10"
+    },
+    "about": "Passionate about automating processes, skilled in Python, Node.js and MERN, exploring DevOps tools like Docker, Kubernetes, Jenkins and AWS and seeking a DevOps Engineer role to streamline deployments"
+  },
+  "experience": [
+    {
+      "company": "eDariba",
+      "roles": [
+        {
+          "title": "Co-founder & Technical Product Manager",
+          "type": "Full-time",
+          "startDate": "Jan 2024",
+          "endDate": "present",
+          "description": "Product management and cross-team coordination"
+        },
+        {
+          "title": "Software Engineer",
+          "type": "Part-time",
+          "startDate": "Jan 2024",
+          "endDate": "Dec 2024",
+          "description": "Back-end development with Frappe, WordPress customization and DevOps/automation using Docker, Kubernetes and Jenkins"
+        }
+      ]
+    },
+    {
+      "company": "Qayedny",
+      "roles": [
+        {
+          "title": "Technical Lead & Product Manager",
+          "startDate": "Dec 2024",
+          "endDate": "Aug 2025",
+          "description": "Led product team, defined features, improved functionality across 20+ pages, enhanced performance and trained team on Jira"
+        },
+        {
+          "title": "Software Engineer & Project Coordinator",
+          "startDate": "Jul 2024",
+          "endDate": "Dec 2024",
+          "description": "Optimized functionality for front-end and back-end, edited WordPress themes, improved performance and user experience"
+        }
+      ]
+    },
+    {
+      "company": "Tech Village for Marketing Solutions",
+      "roles": [
+        {
+          "title": "Software Engineer",
+          "startDate": "May 2024",
+          "endDate": "Jun 2024",
+          "description": "Developed custom plugins, optimized client website performance using PHP/MySQL and WordPress API, ensured SEO best practices"
+        }
+      ]
+    },
+    {
+      "company": "ensoulify",
+      "roles": [
+        {
+          "title": "Software Engineer (Part-time)",
+          "startDate": "Mar 2021",
+          "endDate": "Oct 2022",
+          "description": "Front-end development using CSS, SASS, Tailwind, DaisyUI, Preline; back-end development using Frappe (Python); WordPress customization with focus on SEO"
+        }
+      ]
+    },
+    {
+      "company": "Gap year",
+      "roles": [
+        {
+          "title": "Mandatory military service & part-time work",
+          "startDate": "Dec 2022",
+          "endDate": "Dec 2023",
+          "description": "Gap year for mandatory military service and part-time work"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Digital Egypt Pioneers Initiative \u2013 DEPI",
+      "field": "DevOps Professional Certification",
+      "startDate": "Jun 2024",
+      "endDate": "Aug 2024",
+      "notes": "Implemented CI/CD pipelines, attended cloud and automation workshops, recognized as Top Achiever among 220,470 participants"
+    },
+    {
+      "institution": "Modern Academy Maadi",
+      "degree": "Bachelor\u2019s degree in Computer Science",
+      "startDate": "2018",
+      "endDate": "2022",
+      "grade": "Very Good (B+), Graduation project: Excellent (A+)",
+      "courses": [
+        "Data Structures and Algorithms",
+        "Computer Architecture",
+        "Computer Graphics",
+        "Database Systems",
+        "Operating Systems",
+        "Software Engineering",
+        "Artificial Intelligence",
+        "Decision Support Systems",
+        "Computer Networks",
+        "Neural Networks",
+        "Pattern Recognition",
+        "Information Security"
+      ],
+      "activities": "Volunteered in web development committees at Tech Ain Shams University, Google Developer Student at Al-Azhar University and Enactus Modern Academy\u2019s financial committee"
+    }
+  ],
+  "projects": [
+    {
+      "name": "DevOps & Full-stack Developer \u2013 DEPI Final Project",
+      "period": "Aug 2024 \u2013 Oct 2024",
+      "description": "Dockerized Django application for DEPI scholarship graduation project integrating Docker for containerization and Django for web application framework. Contributions include building a blog module, implementing CI/CD pipelines via Jenkins, configuring Kubernetes for microservices, developing backend functionalities and collaborating with cross-functional teams"
+    },
+    {
+      "name": "Video Summarization Application",
+      "period": "Feb 2024",
+      "description": "Developed a video summarization application using Flask, Python and machine learning. Designed core functionality to summarize video content, integrated machine-learning models, built a user-friendly interface, optimized performance, containerized with Docker and trained clients"
+    },
+    {
+      "name": "Faxes Management System",
+      "period": "Jul 2023 \u2013 Sep 2023",
+      "description": "Application to capture new faxes, share them on a local network and send faxes to authorized users. Front-end built with HTML/CSS/JavaScript (Jinja), back-end with SQLAlchemy/Flask. Skills include Python, GitHub, SQLAlchemy, Docker, VPS hosting and full-stack development"
+    },
+    {
+      "name": "BeTrend \u2013 AI-Powered SaaS Web Application",
+      "period": "Jan 2022 \u2013 Feb 2022",
+      "description": "Full-stack SaaS application using the Frappe framework on an Oracle server. AI platform allows image search using text and predicts image popularity. Responsibilities included architecture design, front-end development with HTML/CSS/Vue.js/Jinja, AI integration via Flask APIs, deployment with Docker, integration with Facebook APIs and building a scraper for AI training"
+    },
+    {
+      "name": "BZNGate",
+      "period": "Feb 2021 \u2013 Apr 2021",
+      "description": "Modified an existing PHP site using the Voyager Laravel Admin Package; edited controllers and models and managed the MySQL database"
+    },
+    {
+      "name": "Facebook marketing API (interesting targeting)",
+      "period": "Feb 2021",
+      "description": "Used Python and Facebook API on a MongoDB Atlas server to collect user interests and associated audience numbers for targeted advertising (approx. 82,867 interests)"
+    },
+    {
+      "name": "Solar System VR Site",
+      "period": "Jan 2021",
+      "description": "Created a virtual reality site with 3DoF to show the solar system over a real-time video background using HTML and JavaScript"
+    },
+    {
+      "name": "Micromouse RC",
+      "period": "Jun 2019",
+      "description": "Built a micromouse robot car for an IEEE competition; minimized dimensions to 80\u00a0\u00d7\u00a092\u00a0mm; designed printed circuit board (PCB) using Autodesk Eagle"
+    },
+    {
+      "name": "Letcut",
+      "description": "Developed a landing page for a video production company using WordPress (Elementor) and custom HTML/JS, optimized SEO to achieve 90\u00a0% PageSpeed Insights"
+    }
+  ],
+  "honorsAndAwards": [
+    {
+      "title": "Qualifying to Be one of the Top Ten in Enactus national competition",
+      "issuer": "Enactus Egypt",
+      "association": "Modern Academy Maadi"
+    },
+    {
+      "title": "Innovation Certificate.pdf",
+      "issuer": "Information Technology Industry Development Agency (ITIDA)",
+      "issuedDate": "Feb 2024",
+      "description": "Completed a 45-hour training course and final project for a potential startup"
+    }
+  ],
+  "volunteering": [
+    {
+      "position": "Member of the web committee",
+      "organization": "GDSC",
+      "period": "Sep 2021 \u2013 Sep 2022",
+      "description": "Participated in events and workshops related to Google technologies and collaborated with members to support initiatives"
+    },
+    {
+      "position": "PMCoordinator",
+      "organization": "Enactus Modern Academy",
+      "period": "Oct 2018 \u2013 Aug 2019",
+      "description": "Led research on projects including sustainable energy solutions and assisted in project planning, coordination and management"
+    }
+  ],
+  "skills": [
+    "Kubernetes",
+    "Jenkins",
+    "CI/CD Pipelines",
+    "Ansible",
+    "Frappe",
+    "Oracle Server",
+    "Docker",
+    "Vue.js",
+    "Redis",
+    "MariaDB",
+    "Design Thinking",
+    "Business Model Canvas",
+    "Marketing Strategy",
+    "Presentation Skills",
+    "Flask",
+    "Tailwind CSS",
+    "Virtual Private Server (VPS)",
+    "Leadership",
+    "Docker Products",
+    "Virtual Reality",
+    "Web Hosting",
+    "HTML5",
+    "Laravel",
+    "PHP",
+    "Jinja",
+    "SQLAlchemy",
+    "frappe Framework",
+    "ERPNext",
+    "Wordpress Development",
+    "GitHub",
+    "Agile Methodologies",
+    "SEO",
+    "Object-Oriented Programming",
+    "Software Development",
+    "JavaScript",
+    "MongoDB",
+    "Node.js",
+    "SCSS",
+    "MySQL",
+    "PhpMyAdmin",
+    "C++",
+    "Python",
+    "Bootstrap",
+    "Arduino",
+    "C",
+    "Git",
+    "Jira",
+    "React.js",
+    "REST APIs",
+    "Adobe XD",
+    "Facebook API",
+    "API Development",
+    "Web Services API",
+    "Website optimization",
+    "Socket.io",
+    "Full-Stack Development",
+    "Express.js"
+  ],
+  "languages": {
+    "Arabic": "Native or bilingual proficiency",
+    "English": "Professional working proficiency"
+  },
+  "organizations": [
+    {
+      "name": "Enactus Modern Academy",
+      "role": "Financial member",
+      "period": "Sep 2021 \u2013 Sep 2022"
+    },
+    {
+      "name": "GDSC \u2013 Google Developer Student Club Al-azhar University",
+      "role": "Member of Web Development Committee",
+      "period": "Sep 2021 \u2013 Jun 2022"
+    },
+    {
+      "name": "MSP ASU",
+      "role": "Member of Web Development Committee",
+      "period": "Nov 2021 \u2013 Jun 2022"
+    }
+  ],
+  "interests": {
+    "topVoices": [
+      "Alex Wang",
+      "Kate Johnson"
+    ],
+    "categories": [
+      "Companies",
+      "Groups",
+      "Newsletters",
+      "Schools"
+    ]
+  },
+  "portfolioSite": {
+    "hero": {
+      "title": "Chief Technology Officer | Technical Lead | Engineering Manager",
+      "name": "Mostafa M. Rawash",
+      "summary": "Strategic technology leader with 5+ years architecting and scaling SaaS platforms, specializing in marketplace and travel technology solutions. Proven track record as Technical Co\u2011Founder building production-ready platforms from ground up, managing complete technology lifecycle from infrastructure design to team scaling. Expert in cloud architecture (AWS, Docker, Kubernetes), payment system integration and data-driven product development. Successfully led cross-functional engineering teams achieving 40% performance improvements and 25% cost optimization. Strong foundation in full-stack development (Python, JavaScript, React) enabling hands-on technical leadership when needed. Currently seeking CTO role to drive technology strategy and platform innovation in high-growth startup environment."
+    },
+    "techSkills": {
+      "programmingLanguages": [
+        "Node.js",
+        "JavaScript",
+        "Python",
+        "C++",
+        "PHP"
+      ],
+      "frameworksStacks": [
+        "MERN",
+        "WordPress",
+        "Frappe"
+      ],
+      "frontEnd": [
+        "React.js",
+        "Jinja",
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "SCSS",
+        "Tailwind"
+      ],
+      "backEnd": [
+        "Express.js",
+        "WordPress",
+        "Flask",
+        "RESTful API",
+        "Postman"
+      ],
+      "databases": [
+        "MongoDB",
+        "MySQL",
+        "MariaDB"
+      ],
+      "design": [
+        "Figma",
+        "Adobe XD",
+        "Bootstrap Studio"
+      ],
+      "devOps": [
+        "Docker",
+        "Git",
+        "Agile",
+        "Google Analytics",
+        "Google Cloud Run",
+        "Google Cloud"
+      ]
+    },
+    "workExperiences": [
+      {
+        "company": "eDariba",
+        "title": "Co-founder & Lead Engineer",
+        "period": "Jan 2024 \u2013 Present",
+        "achievements": [
+          "Architected complete technical strategy for a scalable SaaS platform serving 100+ vendors, defining roadmap, infrastructure decisions and development priorities",
+          "Built and managed an engineering team of 3\u20134 developers, establishing standards, code review processes and agile workflows that reduced deployment time by 50% and improved system reliability to 99.5% uptime",
+          "Designed and implemented a cloud infrastructure strategy using Docker and Kubernetes, architecting CI/CD pipelines and automated deployment systems that cut operational costs by 25%",
+          "Managed technology vendor selection and integration strategy, optimizing platform performance by 30%"
+        ]
+      },
+      {
+        "company": "Qayedny",
+        "title": "Technical Lead & Product Manager",
+        "period": "Dec 2024 \u2013 Sep 2025",
+        "achievements": [
+          "Defined comprehensive product roadmap and aligned product strategy with business objectives through market research and competitor analysis",
+          "Implemented data-driven product decisions via user analytics, A/B testing and customer feedback loops, improving user engagement and product-market fit",
+          "Architected scalable automation solutions and DevOps workflows reducing operational overhead by 25%",
+          "Facilitated stakeholder alignment across leadership, engineering and design teams"
+        ]
+      },
+      {
+        "company": "Qayedny",
+        "title": "Software Engineer II & Project Coordinator",
+        "period": "Jul 2024 \u2013 Aug 2024",
+        "achievements": [
+          "Led end-to-end project delivery for a 20+ page website, managing timeline, resources and stakeholder communication to ensure 100% on-time delivery",
+          "Established project management processes and agile workflows, training and mentoring more than four team members on Jira methodologies and improving task management efficiency by 30%",
+          "Coordinated technical-design collaboration and led user experience optimization initiatives, achieving a 20% increase in user engagement and 15% faster loading speeds"
+        ]
+      },
+      {
+        "company": "TechVillage for Marketing Solutions",
+        "title": "Software Engineer",
+        "period": "May 2024 \u2013 Jun 2024",
+        "achievements": [
+          "Led development team in creating two custom plugins focused on performance optimization, establishing code review standards that boosted site performance by 25%",
+          "Directed the Digital Leadership platform optimization project as technical lead, coordinating with stakeholders to architect solutions reducing load times by 40%",
+          "Established cross-team collaboration processes ensuring 100% design-development consistency, mentoring junior developers and achieving a 15% increase in organic search traffic"
+        ]
+      },
+      {
+        "company": "Ensoulify",
+        "title": "Software Engineer & Technical Lead",
+        "period": "Mar 2021 \u2013 Oct 2022",
+        "achievements": [
+          "Led technical architecture and platform development for core web applications, enhancing load times by 20% and user engagement by 15%",
+          "Managed infrastructure automation and cloud operations implementing Docker-based deployment architecture that automated 80% of server tasks",
+          "Directed data analytics infrastructure implementation, architecting Google Tag Manager integration enabling tracking of 90% of key user interactions",
+          "Collaborated with product and business leadership to translate requirements into technical specifications and make strategic build-versus-buy decisions"
+        ]
+      },
+      {
+        "company": "Brand Maker Agency",
+        "title": "Front-end Developer & Project Coordinator",
+        "period": "Jan 2020 \u2013 May 2021",
+        "achievements": [
+          "Led end-to-end project delivery for more than three sites, managing client requirements, timeline coordination and team resources",
+          "Coordinated technical optimizations improving site speed by 40% and increasing traffic by 25% through strategic SEO implementation",
+          "Managed secure e-commerce platform development within WordPress, leading architecture decisions that reduced downtime by 50%",
+          "Facilitated client-team communication ensuring 100% brand consistency across delivered projects"
+        ]
+      }
+    ],
+    "projects": [
+      "Betrend - SaaS web application",
+      "View door ecommerce",
+      "BZNGate - Freelance",
+      "VR site - Solar System",
+      "Softmindset - Landing page",
+      "Letcut - Freelancing",
+      "Whatsapp Automation Tool",
+      "Faxes Management System - Full Stack Developer",
+      "Portfolio V1.0",
+      "ERP system",
+      "WP plugin that connect woocommerce with Daftra - Freelance",
+      "Facebook API integration",
+      "live Chat Web Application",
+      "Video Summarization - Freelance"
+    ]
+  }
+};
 
-// Run a find command to view items sold on April 4th, 2014.
-const salesOnApril4th = db.getCollection('sales').find({
-  date: { $gte: new Date('2014-04-04'), $lt: new Date('2014-04-05') }
-}).count();
-
-// Print a message to the output window.
-console.log(`${salesOnApril4th} sales occurred in 2014.`);
-
-// Here we run an aggregation and open a cursor to the results.
-// Use '.toArray()' to exhaust the cursor to return the whole result set.
-// You can use '.hasNext()/.next()' to iterate through the cursor page by page.
-db.getCollection('sales').aggregate([
-  // Find all of the sales that occurred in 2014.
-  { $match: { date: { $gte: new Date('2014-01-01'), $lt: new Date('2015-01-01') } } },
-  // Group the total sales for each product.
-  { $group: { _id: '$item', totalSaleAmount: { $sum: { $multiply: [ '$price', '$quantity' ] } } } }
-]);
+db.getCollection('profile_data').replaceOne(
+  { _id: profileData._id },
+  profileData,
+  { upsert: true }
+);

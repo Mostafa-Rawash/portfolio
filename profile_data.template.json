@@ -1,0 +1,102 @@
+{
+  "profile": {
+    "name": "",
+    "headline": "",
+    "location": "",
+    "followers": 0,
+    "connections": "",
+    "contactInfo": {
+      "website": "",
+      "phone": "",
+      "email": "",
+      "birthday": ""
+    },
+    "about": ""
+  },
+  "experience": [
+    {
+      "company": "",
+      "roles": [
+        {
+          "title": "",
+          "type": "",
+          "startDate": "",
+          "endDate": "",
+          "description": ""
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "",
+      "field": "",
+      "startDate": "",
+      "endDate": "",
+      "notes": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "",
+      "period": "",
+      "description": ""
+    }
+  ],
+  "honorsAndAwards": [
+    {
+      "title": "",
+      "issuer": "",
+      "association": ""
+    }
+  ],
+  "volunteering": [
+    {
+      "position": "",
+      "organization": "",
+      "period": "",
+      "description": ""
+    }
+  ],
+  "skills": [],
+  "languages": {
+    "Arabic": "",
+    "English": ""
+  },
+  "organizations": [
+    {
+      "name": "",
+      "role": "",
+      "period": ""
+    }
+  ],
+  "interests": {
+    "topVoices": [],
+    "categories": []
+  },
+  "portfolioSite": {
+    "hero": {
+      "title": "",
+      "name": "",
+      "summary": ""
+    },
+    "techSkills": {
+      "programmingLanguages": [],
+      "frameworksStacks": [],
+      "frontEnd": [],
+      "backEnd": [],
+      "databases": [],
+      "design": [],
+      "devOps": []
+    },
+    "workExperiences": [
+      {
+        "company": "",
+        "title": "",
+        "period": "",
+        "achievements": []
+      }
+    ],
+    "projects": []
+  }
+}

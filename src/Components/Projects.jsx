@@ -2,8 +2,9 @@ import React from 'react'
 
 import Project from './Project'
 import profileData from "../../profile_data.json";
+import richProjects from "../data/data.json";
 
-const ProjectsList = profileData?.projects || [];
+const ProjectsList = richProjects?.length ? richProjects : profileData?.projects || [];
 
 export default function Projects() {
   return (

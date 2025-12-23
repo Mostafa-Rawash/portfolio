@@ -2,6 +2,10 @@ import React from 'react'
 
 export default function Project(props) {
   const hasDrawer = props.project?.badges || props.project?.img || props.project?.des;
+  const drawerId = (props.project?.name || "project")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
   return (
     <div className="group relative overflow-hidden surface-card my-4 transition-transform hover:-translate-y-1">
       <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-theme-p via-theme-a to-theme-lc" />
@@ -15,7 +19,7 @@ export default function Project(props) {
         <div className="card-body w-full gap-3">
           <h2 className="card-title text-xl text-theme-tc font-bold">
             {hasDrawer ? (
-              <label htmlFor={props.project.name.split(' ')[0] + "-drawer"} className="cursor-pointer hover:text-theme-p transition">
+              <label htmlFor={`${drawerId}-drawer`} className="cursor-pointer hover:text-theme-p transition">
                 {props.project.name}
               </label>
             ) : (
@@ -51,10 +55,10 @@ export default function Project(props) {
 
       {hasDrawer && (
         <div className="drawer z-50 absolute">
-          <input id={props.project.name.split(' ')[0] + "-drawer"} type="checkbox" className="drawer-toggle" />
+          <input id={`${drawerId}-drawer`} type="checkbox" className="drawer-toggle" />
           <div className="drawer-side text-theme-tc">
             <label
-              htmlFor={props.project.name.split(' ')[0] + "-drawer"}
+              htmlFor={`${drawerId}-drawer`}
               aria-label="close sidebar"
               className="drawer-overlay"
             ></label>

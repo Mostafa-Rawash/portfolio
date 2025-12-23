@@ -4,6 +4,7 @@ const navigation = [
   { name: "Dashboard", href: "#top" },
   { name: "Skills", href: "#Skills" },
   { name: "Work", href: "#Work" },
+  { name: "Volunteering", href: "#Volunteering" },
   { name: "Projects", href: "#Projects" },
 ];
 
@@ -66,4 +67,3 @@ export default function Navbar() {
     </div>
   );
 }
-

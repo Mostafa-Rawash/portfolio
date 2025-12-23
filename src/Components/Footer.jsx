@@ -8,8 +8,8 @@ export default function Footer() {
   <div className="max-w-screen-xl mx-auto">
     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
       <div className="space-y-3">
-        <h3 className="text-3xl font-black text-theme-tc">Let&apos;s build calm, scalable products.</h3>
-        <p className="text-theme-lc max-w-xl">From roadmap to release, I help teams ship with confidence.</p>
+        <h3 className="text-3xl font-black text-theme-tc">Let&apos;s build resilient, high-velocity products.</h3>
+        <p className="text-theme-lc max-w-xl">I help teams align product strategy, engineering delivery, and operational reliability.</p>
       </div>
       <div className="flex flex-wrap gap-3">
         <a href="mailto:mostafa@rawash.com" className="btn rounded-full bg-gradient-to-r from-theme-p to-theme-a text-theme-b border-0 font-semibold">Email me</a>
@@ -34,15 +34,16 @@ export default function Footer() {
       </div>
       <div className="rounded-2xl border border-white/10 bg-base-100/5 p-5">
         <h5 className="text-lg font-semibold text-theme-tc">Location</h5>
-        <p className="mt-3 text-theme-lc">Al Jizah, Egypt · Remote-friendly</p>
+        <p className="mt-3 text-theme-lc">Al Jizah, Egypt - Remote-friendly</p>
       </div>
     </div>
 
     <div className="flex flex-col md:flex-row justify-between items-center space-y-4 mt-10 border-t border-white/5 pt-6">
       <p className="text-sm text-theme-lc">© {new Date().getFullYear()} Mostafa Rawash. Built with care.</p>
-      <p className="text-sm text-theme-lc">Open to: CTO · Product Engineering · DevOps.</p>
+      <p className="text-sm text-theme-lc">Open to: CTO - Product Engineering - DevOps Leadership.</p>
     </div>
   </div>
 </footer>
     )
   } 
+

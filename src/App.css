@@ -12,30 +12,30 @@
 
 
 :root {
-  --background-color: #0b1124;
-  --card-background-color: rgba(16, 23, 42, 0.9);
-  --primary-color: #16c7b4;
-  --accent-color: #6f8dff;
-  --secondary-color: #f0b65a;
-  --text-color: #e7edf7;
-  --link-color: #9fb3d8;
-  --button-color: #0f172a;
-  --border-color: rgba(231, 237, 247, 0.12);
-  --muted-surface: rgba(255, 255, 255, 0.04);
+  --background-color: #1b263f;
+  --card-background-color: rgba(32, 79, 86, 0.92);
+  --primary-color: #e6fd53;
+  --accent-color: #9eb8f9;
+  --secondary-color: #204f56;
+  --text-color: #fefffd;
+  --link-color: #9eb8f9;
+  --button-color: #1b263f;
+  --border-color: rgba(254, 255, 253, 0.18);
+  --muted-surface: rgba(254, 255, 253, 0.06);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-color: #f5f7fb;
-    --card-background-color: rgba(255, 255, 255, 0.96);
-    --primary-color: #16b59e;
-    --accent-color: #4e6ee9;
-    --secondary-color: #df9c2b;
-    --text-color: #0f172a;
-    --link-color: #4b5563;
-    --button-color: #ffffff;
-    --border-color: rgba(15, 23, 42, 0.1);
-    --muted-surface: rgba(15, 23, 42, 0.04);
+    --background-color: #fefffd;
+    --card-background-color: rgba(254, 255, 253, 0.98);
+    --primary-color: #204f56;
+    --accent-color: #9eb8f9;
+    --secondary-color: #e6fd53;
+    --text-color: #1b263f;
+    --link-color: #204f56;
+    --button-color: #fefffd;
+    --border-color: rgba(27, 38, 63, 0.12);
+    --muted-surface: rgba(27, 38, 63, 0.06);
   }
 }
 

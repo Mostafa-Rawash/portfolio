@@ -1,38 +1,22 @@
+import HeroSection from "../Components/HeroSection.jsx";
 import SkillsSection from "../Components/SkillsSection.jsx";
 import WorkExperience from "../Components/WorkExperience.jsx";
 import VolunteerSection from "../Components/VolunteerSection.jsx";
-
+import Projects from "../Components/Projects.jsx";
 import Loader from "../Components/Loader.jsx";
 
-import { useState , useEffect, Suspense, lazy } from "react";
-
-const Projects = lazy(() => import("../Components/Projects.jsx"));
-
-
-function Home() {
-  const [screenLoading, setScreenLoading] = useState(true);
-
-  useEffect(() => {
-    setScreenLoading(true);
-    setTimeout(() => {
-      setScreenLoading(false);
-    }, 1200);
-  }, []);
+function Home({ profileData, projectsData, experienceData, isLoading }) {
+  if (isLoading) {
+    return <Loader />;
+  }
 
   return (
     <>
-      {screenLoading ? (<Loader />) : 
-      (
-        <>
-        <SkillsSection />
-        <WorkExperience />
-        <VolunteerSection />
-        <Suspense fallback={<Loader />}>
-          <Projects />
-        </Suspense>
-      </>
-      )
-      }
+      <HeroSection profileData={profileData} />
+      <SkillsSection profileData={profileData} />
+      <WorkExperience profileData={profileData} experiences={experienceData} />
+      <VolunteerSection profileData={profileData} />
+      <Projects profileData={profileData} projects={projectsData} />
     </>
   );
 }

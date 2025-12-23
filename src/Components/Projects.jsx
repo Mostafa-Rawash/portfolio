@@ -1,12 +1,15 @@
 import React from 'react'
 
 import Project from './Project'
-import profileData from "../../profile_data.json";
 import richProjects from "../data/data.json";
 
-const ProjectsList = richProjects?.length ? richProjects : profileData?.projects || [];
-
-export default function Projects() {
+export default function Projects({ profileData, projects }) {
+  const ProjectsList =
+    projects && projects.length
+      ? projects
+      : profileData?.projects?.length
+        ? profileData.projects
+        : richProjects || [];
   return (
     <section id='Projects' className="pt-24 container mx-auto">
       <div className="section-shell">

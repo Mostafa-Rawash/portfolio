@@ -1,13 +1,11 @@
 import React from "react";
 import personalImage from "/src/assets/Imgs/MyImg/MyHeadPic.png";
-import profileData from "../../profile_data.json";
-
-const heroCopy = profileData?.portfolioSite?.hero;
-const contact = profileData?.profile;
 const CV_LINK = "https://docs.google.com/document/d/1CLJD3bJbjpe35vzvNBKqY8OexdnHGqwr/edit";
 const CVPages = ["/src/assets/Imgs/CV/1.webp", "/src/assets/Imgs/CV/2.webp", "/src/assets/Imgs/CV/3.webp"];
 
-export default function HeroSection() {
+export default function HeroSection({ profileData }) {
+  const heroCopy = profileData?.portfolioSite?.hero;
+  const contact = profileData?.profile;
   return (
     <section className="container mx-auto pt-12 lg:pt-16">
       <div className="section-shell">

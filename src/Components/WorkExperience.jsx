@@ -1,12 +1,12 @@
 import React from "react";
-import profileData from "../../profile_data.json";
 
-const workExperiences =
-  profileData?.portfolioSite?.workExperiences && profileData.portfolioSite.workExperiences.length
-    ? profileData.portfolioSite.workExperiences
-    : [];
-
-export default function WorkExperience() {
+export default function WorkExperience({ profileData, experiences }) {
+  const workExperiences =
+    experiences && experiences.length
+      ? experiences
+      : profileData?.portfolioSite?.workExperiences && profileData.portfolioSite.workExperiences.length
+        ? profileData.portfolioSite.workExperiences
+        : [];
   return (
     <section id="Work" className="container mx-auto pt-24 pb-16">
       <div className="section-shell">

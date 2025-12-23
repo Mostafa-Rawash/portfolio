@@ -1,13 +1,11 @@
 import React from 'react'
-import profileData from "../../profile_data.json";
 
-const skillsFromProfile = profileData?.portfolioSite?.techSkills || {};
-const skillList = Object.entries(skillsFromProfile).map(([stackName, stackTech]) => ({
-  stackName,
-  stackTech,
-}));
-
-export default function SkillsSection() {
+export default function SkillsSection({ profileData }) {
+  const skillsFromProfile = profileData?.portfolioSite?.techSkills || {};
+  const skillList = Object.entries(skillsFromProfile).map(([stackName, stackTech]) => ({
+    stackName,
+    stackTech,
+  }));
   return (
 
     <section id='Skills' className="container mx-auto pt-24">

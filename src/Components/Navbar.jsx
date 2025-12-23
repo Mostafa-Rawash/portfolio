@@ -1,11 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const navigation = [
-  { name: "Dashboard", href: "#top" },
-  { name: "Skills", href: "#Skills" },
-  { name: "Work", href: "#Work" },
-  { name: "Volunteering", href: "#Volunteering" },
-  { name: "Projects", href: "#Projects" },
+  { name: "Dashboard", href: "/#top" },
+  { name: "Skills", href: "/#Skills" },
+  { name: "Work", href: "/#Work" },
+  { name: "Volunteering", href: "/#Volunteering" },
+  { name: "Projects", href: "/#Projects" },
+  { name: "Blogs", href: "/blogs" },
 ];
 
 export default function Navbar() {
@@ -22,12 +24,15 @@ export default function Navbar() {
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-4 z-[1] p-2 shadow bg-theme-cc/95 rounded-box w-56 border border-white/10">
               {navigation.map((val) => (
                 <li key={val.name}>
-                  <a
-                    className="text-lg font-semibold text-theme-tc hover:text-theme-p"
-                    href={val.href}
-                  >
-                    {val.name}
-                  </a>
+                  {val.href.startsWith("/") ? (
+                    <Link className="text-lg font-semibold text-theme-tc hover:text-theme-p" to={val.href}>
+                      {val.name}
+                    </Link>
+                  ) : (
+                    <a className="text-lg font-semibold text-theme-tc hover:text-theme-p" href={val.href}>
+                      {val.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
@@ -41,12 +46,21 @@ export default function Navbar() {
           <ul className="menu menu-horizontal px-1 gap-2">
             {navigation.map((val) => (
               <li key={val.name}>
-                <a
-                  className="text-sm font-semibold px-3 py-2 rounded-full transition text-theme-tc hover:text-theme-p hover:bg-gradient-to-r hover:from-theme-p/20 hover:to-theme-a/20 hover:border hover:border-white/10"
-                  href={val.href}
-                >
-                  {val.name}
-                </a>
+                {val.href.startsWith("/") ? (
+                  <Link
+                    className="text-sm font-semibold px-3 py-2 rounded-full transition text-theme-tc hover:text-theme-p hover:bg-gradient-to-r hover:from-theme-p/20 hover:to-theme-a/20 hover:border hover:border-white/10"
+                    to={val.href}
+                  >
+                    {val.name}
+                  </Link>
+                ) : (
+                  <a
+                    className="text-sm font-semibold px-3 py-2 rounded-full transition text-theme-tc hover:text-theme-p hover:bg-gradient-to-r hover:from-theme-p/20 hover:to-theme-a/20 hover:border hover:border-white/10"
+                    href={val.href}
+                  >
+                    {val.name}
+                  </a>
+                )}
               </li>
             ))}
           </ul>

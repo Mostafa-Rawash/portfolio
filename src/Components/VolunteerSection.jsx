@@ -1,9 +1,7 @@
 import React from "react";
-import profileData from "../../profile_data.json";
 
-const VolunteerList = profileData?.volunteering || [];
-
-export default function VolunteerSection() {
+export default function VolunteerSection({ profileData }) {
+  const VolunteerList = profileData?.volunteering || [];
   return (
     <section id="Volunteering" className="container mx-auto pt-20 pb-10">
       <div className="section-shell space-y-10">

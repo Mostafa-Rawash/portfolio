@@ -1,0 +1,76 @@
+{
+  "profile": {
+    "fullName": "Mostafa M. Rawash",
+    "headline": "Product Manager | Technical PM | DevOps Leader",
+    "location": "Al Jizah, Egypt",
+    "followers": 1191,
+    "connections": "500+"
+  },
+  "portfolioSite": {
+    "hero": {
+      "title": "Shipping products that move metrics — from roadmap to release.",
+      "name": "Mostafa M. Rawash",
+      "summary": "Product manager and technical leader who turns ambiguous problems into shipped outcomes. I've led cross-functional teams, defined roadmaps, and delivered platforms that scale."
+    },
+    "techSkills": {
+      "productAndDelivery": ["Product Strategy", "Roadmapping", "Agile", "Data Analysis", "Stakeholder Mgmt", "Jira", "Notion", "Amplitude"],
+      "frontEnd": ["React.JS", "HTML", "CSS", "SCSS", "Tailwind", "Vue.JS"],
+      "backEnd": ["Flask", "Frappe", "Express.js", "WordPress"],
+      "databases": ["MongoDB", "MySQL", "Mariadb", "PostgreSQL"],
+      "devOps": ["Docker", "Kubernetes", "Jenkins", "CI-CD", "Git"],
+      "design": ["Figma", "Adobe XD"]
+    }
+  },
+  "volunteering": [
+    {
+      "organization": "GDSC Modern Academy",
+      "role": "Web Committee Member",
+      "period": "2019 – 2020"
+    },
+    {
+      "organization": "Enactus Modern Academy",
+      "role": "PM Coordinator",
+      "period": "2018 – 2019"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Digital Egypt Pioneers Initiative (DEPI)",
+      "type": "Professional Certification",
+      "field": "DevOps Engineer",
+      "period": "Jun 2024 – Aug 2024",
+      "highlights": [
+        "CI/CD pipelines",
+        "Cloud & automation workshops",
+        "Top Achiever among 220,470 participants"
+      ]
+    },
+    {
+      "institution": "Modern Academy Maadi",
+      "degree": "Bachelor of Computer Science",
+      "period": "2018 – 2022",
+      "grade": "Very Good (B+)",
+      "graduationProject": "Excellent (A+)"
+    }
+  ],
+  "honorsAndAwards": [
+    {
+      "title": "Top Ten – Enactus National Competition",
+      "issuer": "Enactus Egypt"
+    },
+    {
+      "title": "Innovation Certificate",
+      "issuer": "ITIDA",
+      "date": "Feb 2024"
+    },
+    {
+      "title": "Micromouse Competition",
+      "issuer": "IEEE HTI",
+      "year": "2019"
+    }
+  ],
+  "languages": {
+    "Arabic": "Native",
+    "English": "Professional"
+  }
+}

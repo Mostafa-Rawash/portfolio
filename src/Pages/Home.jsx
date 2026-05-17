@@ -1,22 +1,26 @@
+import React, { useState } from "react";
 import HeroSection from "../Components/HeroSection.jsx";
 import SkillsSection from "../Components/SkillsSection.jsx";
 import WorkExperience from "../Components/WorkExperience.jsx";
-import VolunteerSection from "../Components/VolunteerSection.jsx";
 import Projects from "../Components/Projects.jsx";
-import Loader from "../Components/Loader.jsx";
+import VolunteerSection from "../Components/VolunteerSection.jsx";
+import Sidebar from "../Components/Sidebar.jsx";
+import CvPreview from "../Components/CvPreview.jsx";
 
-function Home({ profileData, projectsData, experienceData, isLoading }) {
-  if (isLoading) {
-    return <Loader />;
-  }
+function Home({ profileData, projectsData, experienceData }) {
+  const [cvOpen, setCvOpen] = useState(false);
 
   return (
     <>
-      <HeroSection profileData={profileData} />
+      <HeroSection profileData={profileData} onOpenCV={() => setCvOpen(true)} />
       <SkillsSection profileData={profileData} />
       <WorkExperience profileData={profileData} experiences={experienceData} />
-      <VolunteerSection profileData={profileData} />
       <Projects profileData={profileData} projects={projectsData} />
+      <VolunteerSection profileData={profileData} />
+
+      <Sidebar isOpen={cvOpen} onClose={() => setCvOpen(false)}>
+        <CvPreview />
+      </Sidebar>
     </>
   );
 }

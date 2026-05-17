@@ -1,0 +1,77 @@
+[
+  {
+    "company": "eDariba",
+    "title": "Co-founder & Product Manager",
+    "period": "Jan 2024 - Present",
+    "achievements": [
+      "Owned the product roadmap from zero to launch for a compliance SaaS platform",
+      "Aligned engineering, design, and business stakeholders around quarterly OKRs",
+      "Shipped the MVP in 4 months, achieving 99.5% uptime and 25% cost reduction"
+    ]
+  },
+  {
+    "company": "Qayedny",
+    "title": "Technical PM & Delivery Lead",
+    "period": "Dec 2024 - Sep 2025",
+    "achievements": [
+      "Defined and executed the product roadmap that grew active users by 40%",
+      "Implemented analytics, A/B testing, and feedback loops to drive iteration",
+      "Reduced operational overhead by 25% through DevOps automation"
+    ]
+  },
+  {
+    "company": "eDariba",
+    "title": "Technical Product Manager",
+    "period": "Jan 2024 - Nov 2024",
+    "achievements": [
+      "Prioritized the feature backlog using customer interviews and usage data",
+      "Coordinated cross-team delivery between engineering, compliance, and operations"
+    ]
+  },
+  {
+    "company": "Qayedny",
+    "title": "Project Coordinator & Software Engineer",
+    "period": "Jul 2024 - Aug 2024",
+    "achievements": [
+      "Delivered a 20+ page platform with 100% on-time milestone completion",
+      "Improved engagement metrics by 20% through data-driven UX improvements",
+      "Trained 4+ team members on Jira and agile workflows"
+    ]
+  },
+  {
+    "company": "TechVillage for Marketing Solutions",
+    "title": "Technical PM & WordPress Engineer",
+    "period": "May 2024 - Jun 2024",
+    "achievements": [
+      "Managed end-to-end delivery of 2 custom plugins, improving site performance by 25%",
+      "Reduced page load times by 40% for the Digital Leadership platform",
+      "Grew organic traffic by 15% through SEO-driven content strategy"
+    ]
+  },
+  {
+    "company": "Gap Year",
+    "title": "Mandatory Military Service",
+    "period": "Dec 2022 - Dec 2023",
+    "achievements": []
+  },
+  {
+    "company": "Ensoulify",
+    "title": "Product Engineer & Technical Lead",
+    "period": "Mar 2021 - Oct 2022",
+    "achievements": [
+      "Improved load time by 20% and engagement by 15% through product-led experiments",
+      "Automated 80% of server infrastructure, cutting ops costs",
+      "Implemented GTM tracking for 90% of user interactions to inform product decisions"
+    ]
+  },
+  {
+    "company": "Brand Maker Agency",
+    "title": "Project Coordinator & Front-end Developer",
+    "period": "Jan 2020 - May 2021",
+    "achievements": [
+      "Delivered 3+ client projects end-to-end on time and on budget",
+      "Improved site speed by 40% and traffic by 25% across engagements",
+      "Built secure e-commerce solutions that reduced client downtime by 50%"
+    ]
+  }
+]

@@ -1,116 +1,96 @@
 import React from "react";
 import personalImage from "/src/assets/Imgs/MyImg/MyHeadPic.png";
 const CV_LINK = "https://docs.google.com/document/d/1CLJD3bJbjpe35vzvNBKqY8OexdnHGqwr/edit";
-const CVPages = ["/src/assets/Imgs/CV/1.webp", "/src/assets/Imgs/CV/2.webp", "/src/assets/Imgs/CV/3.webp"];
 
-export default function HeroSection({ profileData }) {
+export default function HeroSection({ profileData, onOpenCV }) {
   const heroCopy = profileData?.portfolioSite?.hero;
   const contact = profileData?.profile;
   return (
-    <section className="container mx-auto pt-12 lg:pt-16">
+    <section className="container mx-auto pt-16 lg:pt-24 pb-12">
       <div className="section-shell">
-        <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-10 items-center">
-          <div className="space-y-6">
+        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
+          <div className="space-y-7">
             <div className="eyebrow">
               <span className="eyebrow-dot" />
-              CTO / Technical Lead
+              PM / Technical Product Manager
             </div>
-            <h1 className="text-3xl lg:text-5xl font-black leading-tight text-theme-tc">
-              {heroCopy?.title || "Technical leadership for founders and product teams."}
+            <h1 className="text-4xl lg:text-6xl font-black leading-[1.08] tracking-tight text-theme-tc">
+              {heroCopy?.title || "Shipping products that move metrics — from roadmap to release."}
             </h1>
-            <p className="text-lg text-theme-lc max-w-3xl">
+            <p className="text-lg lg:text-xl text-theme-lc max-w-3xl leading-relaxed">
               {heroCopy?.summary ||
-                "I help startups scale reliable platforms, align product and engineering, and ship faster without sacrificing quality."}
+                "Product manager and technical leader who turns ambiguous problems into shipped outcomes."}
             </p>
 
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 pt-1">
               <a
                 href={CV_LINK}
                 target="_blank"
                 rel="noreferrer"
-                className="btn border-0 rounded-full bg-theme-p text-theme-b font-semibold px-6"
+                className="btn border-0 rounded-xl bg-gradient-to-r from-theme-p to-violet-500 text-white font-bold px-7 shadow-glow"
               >
-                See leadership resume
+                Resume
               </a>
               <a
                 href="#Projects"
-                className="btn rounded-full border border-white/10 bg-transparent text-theme-tc font-semibold px-6"
+                className="btn rounded-xl border border-white/10 bg-white/[0.03] text-theme-tc font-bold px-7"
               >
-                Review case studies
+                Projects
               </a>
-              <label
-                htmlFor="CV-drawer"
-                className="btn rounded-full border border-white/10 bg-transparent text-theme-tc font-semibold px-6"
+              <button
+                onClick={onOpenCV}
+                className="btn rounded-xl border border-white/10 bg-white/[0.03] text-theme-tc font-bold px-7"
               >
                 Preview CV
-              </label>
+              </button>
               <a
                 href="https://wa.me/201099129550"
                 target="_blank"
                 rel="noreferrer"
-                className="btn rounded-full border border-white/10 bg-theme-cc text-theme-tc font-semibold px-6"
+                className="btn rounded-xl bg-theme-a/10 border border-theme-a/20 text-theme-a font-bold px-7"
               >
-                Schedule a strategy call
+                Book a call
               </a>
             </div>
 
-            <p className="text-sm text-theme-lc">
-              Outcomes: faster delivery, higher reliability, and clearer product direction.
-            </p>
-
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2">
-              <div className="surface-card px-4 py-3">
-                <p className="text-xs text-theme-lc">Followers</p>
-                <p className="text-2xl font-bold text-theme-tc">{contact?.followers || "1K+"}</p>
+            <div className="grid grid-cols-3 gap-4 pt-3">
+              <div className="surface-card px-4 py-3 text-center">
+                <p className="text-2xl lg:text-3xl font-black bg-gradient-to-r from-theme-p to-violet-400 bg-clip-text text-transparent">{contact?.followers || "1K+"}</p>
+                <p className="text-xs text-theme-lc mt-1">Followers</p>
               </div>
-              <div className="surface-card px-4 py-3">
-                <p className="text-xs text-theme-lc">Connections</p>
-                <p className="text-2xl font-bold text-theme-tc">{contact?.connections || "500+"}</p>
+              <div className="surface-card px-4 py-3 text-center">
+                <p className="text-2xl lg:text-3xl font-black bg-gradient-to-r from-theme-a to-cyan-300 bg-clip-text text-transparent">{contact?.connections || "500+"}</p>
+                <p className="text-xs text-theme-lc mt-1">Connections</p>
               </div>
-              <div className="surface-card px-4 py-3">
-                <p className="text-xs text-theme-lc">Location</p>
-                <p className="text-xl font-semibold text-theme-tc">{contact?.location || "Remote-friendly"}</p>
+              <div className="surface-card px-4 py-3 text-center">
+                <p className="text-lg lg:text-xl font-bold text-theme-tc">{contact?.location || "Remote"}</p>
+                <p className="text-xs text-theme-lc mt-1">Location</p>
               </div>
             </div>
           </div>
 
-          <div className="relative">
-            <div className="relative mx-auto max-w-md surface-card p-6 backdrop-blur">
-              <div className="relative overflow-hidden rounded-[24px] bg-white/5 p-4">
-                <img
-                  src={personalImage}
-                  alt="Mostafa Rawash portrait"
-                  className="relative mx-auto mask mask-circle shadow-3xl shadow-black/40 w-48 h-48 object-cover"
-                  loading="lazy"
-                />
-                <div className="relative mt-4 flex flex-col items-center gap-1 text-center">
-                  <span className="px-4 py-2 rounded-full bg-theme-p text-theme-b text-xs font-semibold">
-                    CTO • Technical Lead • Eng Manager
-                  </span>
-                  <h2 className="text-2xl font-bold text-theme-tc">{heroCopy?.name || "Mostafa M. Rawash"}</h2>
-                  <p className="text-theme-lc text-sm">Scaling teams and platforms with calm execution.</p>
+          <div className="relative flex justify-center">
+            <div className="relative max-w-sm w-full">
+              <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-theme-p/12 via-transparent to-theme-a/8 blur-3xl" />
+              <div className="relative surface-card p-6 backdrop-blur-xl">
+                <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-theme-p/6 to-theme-a/4 p-5">
+                  <img
+                    src={personalImage}
+                    alt="Mostafa Rawash portrait"
+                    className="relative mx-auto mask mask-circle shadow-3xl shadow-black/40 w-44 h-44 object-cover"
+                    loading="lazy"
+                  />
+                  <div className="relative mt-5 flex flex-col items-center gap-2 text-center">
+                    <span className="px-4 py-1.5 rounded-full bg-gradient-to-r from-theme-p/12 to-theme-a/8 text-theme-p text-xs font-bold tracking-wide border border-theme-p/15">
+                      PM · Technical PM · Delivery Lead
+                    </span>
+                    <h2 className="text-2xl font-black text-theme-tc">{heroCopy?.name || "Mostafa M. Rawash"}</h2>
+                    <p className="text-theme-lc text-sm">Shipping products that move metrics — from roadmap to release.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div className="drawer z-50">
-        <input id="CV-drawer" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-side">
-          <label htmlFor="CV-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-          <ul className="menu p-4 min-h-full bg-theme-cc text-theme-tc w-10/12 md:w-6/12 lg:w-6/12 xl:5/12 carousel carousel-vertical rounded-box border border-white/10">
-            <li>
-              {CVPages.map((image) => {
-                return (
-                  <div className="carousel-item h-full" key={image}>
-                    <img src={image} alt={"CV-" + image} />
-                  </div>
-                );
-              })}
-            </li>
-          </ul>
         </div>
       </div>
     </section>

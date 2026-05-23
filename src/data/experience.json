@@ -1,51 +1,44 @@
 [
   {
     "company": "eDariba",
-    "title": "Co-founder & Product Manager",
+    "title": "Co-founder & Technical Product Manager",
     "period": "Jan 2024 - Present",
     "achievements": [
-      "Owned the product roadmap from zero to launch for a compliance SaaS platform",
-      "Aligned engineering, design, and business stakeholders around quarterly OKRs",
-      "Shipped the MVP in 4 months, achieving 99.5% uptime and 25% cost reduction"
+      "Defined the product roadmap and technical strategy for a tax-tech SaaS serving 1,000+ vendors in a regulation-heavy Fintech environment",
+      "Led a cross-functional engineering team with Agile methodologies, reducing deployment time by 50% and achieving 99.5% uptime",
+      "Used SQL and data analysis to monitor platform performance, driving a 30% optimization in platform efficiency",
+      "Architected Docker/Kubernetes cloud infrastructure, cutting operational costs by 25% while supporting digital financial transactions"
     ]
   },
   {
     "company": "Qayedny",
-    "title": "Technical PM & Delivery Lead",
-    "period": "Dec 2024 - Sep 2025",
+    "title": "Technical Lead & Product Manager",
+    "period": "Dec 2024 - Aug 2025",
     "achievements": [
-      "Defined and executed the product roadmap that grew active users by 40%",
-      "Implemented analytics, A/B testing, and feedback loops to drive iteration",
-      "Reduced operational overhead by 25% through DevOps automation"
-    ]
-  },
-  {
-    "company": "eDariba",
-    "title": "Technical Product Manager",
-    "period": "Jan 2024 - Nov 2024",
-    "achievements": [
-      "Prioritized the feature backlog using customer interviews and usage data",
-      "Coordinated cross-team delivery between engineering, compliance, and operations"
+      "Spearheaded end-to-end delivery of a 20+ page digital platform, owning the full lifecycle from design to launch",
+      "Implemented data-driven product decisions via analytics and feedback loops, improving user engagement and product-market fit",
+      "Collaborated with design and engineering to enhance UX, achieving 15% faster load speeds and a 20% increase in user engagement",
+      "Mentored team members on Jira and agile best practices, improving task delivery efficiency by 30%"
     ]
   },
   {
     "company": "Qayedny",
-    "title": "Project Coordinator & Software Engineer",
+    "title": "Project Coordinator & WordPress Developer",
     "period": "Jul 2024 - Aug 2024",
     "achievements": [
-      "Delivered a 20+ page platform with 100% on-time milestone completion",
-      "Improved engagement metrics by 20% through data-driven UX improvements",
-      "Trained 4+ team members on Jira and agile workflows"
+      "Delivered a 20+ page responsive platform with 100% on-time milestone completion",
+      "Improved UX and streamlined the registration flow, resulting in a 15% increase in user engagement",
+      "Trained team members on Jira, reducing project completion time by 10%"
     ]
   },
   {
     "company": "TechVillage for Marketing Solutions",
-    "title": "Technical PM & WordPress Engineer",
+    "title": "Technical PM & Software Engineer",
     "period": "May 2024 - Jun 2024",
     "achievements": [
-      "Managed end-to-end delivery of 2 custom plugins, improving site performance by 25%",
-      "Reduced page load times by 40% for the Digital Leadership platform",
-      "Grew organic traffic by 15% through SEO-driven content strategy"
+      "Led development of custom plugins and performance optimizations, reducing website load times by 40%",
+      "Collaborated with stakeholders to translate business requirements into technical solutions, ensuring 100% design-development consistency",
+      "Contributed to SEO strategy, growing organic traffic by 15%"
     ]
   },
   {
@@ -56,12 +49,12 @@
   },
   {
     "company": "Ensoulify",
-    "title": "Product Engineer & Technical Lead",
+    "title": "Software Engineer & Technical Lead",
     "period": "Mar 2021 - Oct 2022",
     "achievements": [
-      "Improved load time by 20% and engagement by 15% through product-led experiments",
-      "Automated 80% of server infrastructure, cutting ops costs",
-      "Implemented GTM tracking for 90% of user interactions to inform product decisions"
+      "Directed technical architecture for core web applications, enhancing load times by 20% and automating 80% of server tasks via Docker-based deployment",
+      "Implemented data analytics infrastructure (Google Tag Manager) to track 90% of key user interactions, enabling data-backed product iterations",
+      "Improved user engagement by 15% through product-led front-end experiments across CSS, SASS, Tailwind, and DaisyUI"
     ]
   },
   {
@@ -69,9 +62,9 @@
     "title": "Project Coordinator & Front-end Developer",
     "period": "Jan 2020 - May 2021",
     "achievements": [
-      "Delivered 3+ client projects end-to-end on time and on budget",
-      "Improved site speed by 40% and traffic by 25% across engagements",
-      "Built secure e-commerce solutions that reduced client downtime by 50%"
+      "Delivered 3+ client projects end-to-end, on time and on budget",
+      "Improved site speed by 40% and traffic by 25% through caching, image optimization, and SEO best practices",
+      "Architected a secure e-commerce platform that drove a 90% growth in client sales"
     ]
   }
 ]

@@ -10,14 +10,14 @@
     "hero": {
       "title": "Shipping products that move metrics — from roadmap to release.",
       "name": "Mostafa M. Rawash",
-      "summary": "Product manager and technical leader who turns ambiguous problems into shipped outcomes. I've led cross-functional teams, defined roadmaps, and delivered platforms that scale."
+      "summary": "Technical Product Manager and Co-founder with 5+ years driving SaaS, Fintech, and Marketplace platforms from discovery to delivery. I bridge engineering and business — reducing deployment times by 50%, cutting operational costs by 25%, and using SQL and data analytics to turn user signals into shipped outcomes."
     },
     "techSkills": {
-      "productAndDelivery": ["Product Strategy", "Roadmapping", "Agile", "Data Analysis", "Stakeholder Mgmt", "Jira", "Notion", "Amplitude"],
+      "productAndDelivery": ["Product Lifecycle Mgmt", "Roadmap Strategy", "Agile & Scrum", "A/B Testing", "UX Optimization", "KPI Tracking", "Stakeholder Mgmt", "Jira", "Google Analytics"],
       "frontEnd": ["React.JS", "HTML", "CSS", "SCSS", "Tailwind", "Vue.JS"],
       "backEnd": ["Flask", "Frappe", "Express.js", "WordPress"],
-      "databases": ["MongoDB", "MySQL", "Mariadb", "PostgreSQL"],
-      "devOps": ["Docker", "Kubernetes", "Jenkins", "CI-CD", "Git"],
+      "databases": ["MySQL", "MariaDB", "MongoDB", "PostgreSQL", "SQL"],
+      "devOps": ["Docker", "Kubernetes", "Jenkins", "CI-CD", "Git", "AWS"],
       "design": ["Figma", "Adobe XD"]
     }
   },
